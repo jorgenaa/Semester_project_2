@@ -1,0 +1,49 @@
+.navbar {
+
+
+	&__logo {
+		height: 64px;
+	}
+
+	&__brand {
+		color: $white;
+
+		@include for-tablet-only {
+			display: block;
+		}
+
+		@include for-phone-only {
+			display: none;
+		}
+	}
+
+	&__collapse {
+		@include media-max-991px {
+			border: 1px $aquaMarine;
+			border-top-style: solid;
+		}
+
+	}
+}
+
+.navbar-toggler {
+	color: $white;
+	border-color: $white;
+}
+
+
+.nav-item {
+	&--color {
+		color: white;
+	}
+
+	&--hover {
+		&:hover {
+			color: #a7f2e4;
+		}
+	}
+
+	&--active {
+		color: #a7f2e4;
+	}
+}

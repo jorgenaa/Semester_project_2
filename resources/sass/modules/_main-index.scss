@@ -1,0 +1,153 @@
+.background-img {
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--index {
+    background-image: url("../../resources/img/castle.jpg");
+    background-attachment: fixed;
+  }
+
+  &--gamePage {
+    background-image: url("../../resources/img/map.jpg");
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.push {
+  height: 250px;
+}
+
+.cards {
+  &--background {
+    background-color: rgba(7, 74, 89, 0.7);
+    position: relative;
+    top: 20px;
+    border-radius: 0.25rem;
+  }
+
+  &__title {
+    font-family: $GameOfThrones;
+    padding: 20px 0;
+
+    @include for-tablet-only {
+      font-size: 26px;
+      text-align: center;
+    }
+
+    @include for-phone-only {
+      line-height: 1.5;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    @include for-tablet-only {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+
+    &--color {
+      background-color: #010101;
+    }
+
+    &--active-player1 {
+      background-color: $red;
+    }
+
+    &--active-player2 {
+      background-color: $tintedRed;
+    }
+  }
+
+  &__icon {
+    width: 150px;
+    display: inline-block;
+    color: white;
+  }
+
+  &__table {
+    height: 220px;
+    color: $white;
+  }
+}
+
+.selected-player {
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  right: 24px;
+  font-size: large;
+  color: $white;
+}
+
+.selected-player-one,
+.selected-player-two {
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+.selected-player--active {
+  color: $red;
+}
+
+.selected-player-wrapper {
+  margin: 10px 0 10px 10px;
+  border-radius: 0.25rem;
+  border: solid 1px $white;
+  display: block;
+
+  background-color: $black;
+
+  @include media-max-768px {
+    margin: 10px 0 10px 0px;
+    border-radius: 0;
+    border: none;
+  }
+
+  &__text {
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 22px;
+
+    @include for-phone-only {
+      font-size: 17px;
+    }
+  }
+}
+
+.ml-auto {
+  @include media-max-768px {
+    margin: 20px auto;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+
+  &__continue {
+    display: none;
+  }
+
+  &--color {
+    background-color: $red;
+    color: $white;
+    border: solid 1px $white;
+  }
+
+  &--hover {
+    &:hover {
+      background-color: $white;
+      color: $red;
+    }
+  }
+}
+

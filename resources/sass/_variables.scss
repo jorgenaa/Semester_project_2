@@ -1,0 +1,26 @@
+//Color variables
+
+$red: #b30000;
+$tintedRed: #c23333;
+$black: #010101;
+$darkTeal: #074a59;
+$lightTeal: #238c8c;
+$aquaMarine: #a7f2e4;
+$white: #ffffff;
+
+//Font variables
+
+@font-face {
+	font-family: 'Game of Thrones';
+	src: url("../fonts/Game_of_thrones/Game\ of\ Thrones.ttf");
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+//Font variables
+$GameOfThrones: 'Game of Thrones', serif;
+
+$Roboto: 'Roboto', sans-serif;
