@@ -40,7 +40,7 @@ body {
   color: #ffffff;
   font-size: 17px;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   font-weight: 0.5px;
   font-style: normal; }
   @media (max-width: 429px) {
@@ -427,12 +427,14 @@ td {
 .background-img {
   background-position: inherit;
   background-repeat: no-repeat;
-  background-size: cover; }
-  .background-img--index {
-    background-image: url("../../resources/img/castle.jpg");
-    background-attachment: fixed; }
+  background-size: cover;
+  background-attachment: fixed; }
+  .background-img--characterPage {
+    background-image: url("../img/castle.jpg"); }
   .background-img--gamePage {
-    background-image: url("../../resources/img/map.jpg"); }
+    background-image: url("../img/map.jpg"); }
+  .background-img--finalePage {
+    background-image: url("../img/trees.jpg"); }
 
 .wrapper {
   min-height: 100%;
@@ -441,41 +443,165 @@ td {
 .push {
   height: 250px; }
 
-.cards--background {
-  background-color: rgba(7, 74, 89, 0.7);
+.game {
   position: relative;
   top: 20px;
-  border-radius: 0.25rem; }
-.cards__title {
-  font-family: "Game of Thrones", serif;
-  padding: 20px 0; }
-  @media (max-width: 643px) {
-    .cards__title {
-      font-size: 26px;
-      text-align: center; } }
-  @media (max-width: 429px) {
-    .cards__title {
-      line-height: 1.5; } }
-.cards__text {
-  margin-bottom: 30px; }
-  @media (max-width: 643px) {
-    .cards__text {
-      text-align: center; } }
-.cards__item {
-  cursor: pointer; }
-  .cards__item--color {
+  padding-bottom: 50px; }
+  .game__header {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(7, 74, 89, 0.7);
+    border-radius: 0.25rem; }
+  .game__page-title {
+    font-family: "Game of Thrones", serif;
+    padding: 20px 0; }
+    @media (max-width: 643px) {
+      .game__page-title {
+        font-size: 26px;
+        text-align: center; } }
+    @media (max-width: 429px) {
+      .game__page-title {
+        line-height: 1.5; } }
+  .game__text {
+    margin-bottom: 30px; }
+    @media (max-width: 643px) {
+      .game__text {
+        text-align: center; } }
+  .game__player {
+    margin: 10px 0 10px 10px;
+    border-radius: 0.25rem;
+    border: solid 1px #ffffff;
+    display: block;
     background-color: #010101; }
-  .cards__item--active-player1 {
-    background-color: #b30000; }
-  .cards__item--active-player2 {
-    background-color: #c23333; }
-.cards__icon {
-  width: 150px;
-  display: inline-block;
-  color: white; }
-.cards__table {
-  height: 220px;
-  color: #ffffff; }
+    @media (max-width: 768px) {
+      .game__player {
+        margin: 10px 0 10px 0px;
+        border-radius: 0;
+        border: none; } }
+  .game__player-text {
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 22px; }
+    @media (max-width: 429px) {
+      .game__player-text {
+        font-size: 17px; } }
+  .game__btn {
+    text-transform: uppercase; }
+    .game__btn--continue {
+      display: none; }
+    .game__btn--color {
+      background-color: #b30000;
+      color: #ffffff;
+      border: solid 1px #ffffff; }
+    .game__btn--hover:hover {
+      background-color: #ffffff;
+      color: #b30000; }
+  .game__body {
+    padding: 10px; }
+    .game__body--background {
+      background-color: rgba(7, 74, 89, 0.7);
+      border-radius: 0.25rem; }
+  .game__card {
+    cursor: pointer;
+    border: solid 1px #ffffff; }
+    .game__card--color {
+      background-color: #010101; }
+    .game__card--active-player1 {
+      background-color: #b30000; }
+    .game__card--active-player2 {
+      background-color: #c23333; }
+  .game__icon {
+    width: 150px;
+    display: inline-block;
+    color: white; }
+  .game__table {
+    height: 220px;
+    color: #ffffff; }
+  .game__info {
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 22px; }
+    @media (max-width: 429px) {
+      .game__info {
+        font-size: 17px; } }
+  .game__tiles-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-auto-flow: row; }
+  .game__tile {
+    height: 150px;
+    background-color: rgba(7, 74, 89, 0.7);
+    border-radius: 0.25rem;
+    padding: 10px; }
+    .game__tile:nth-of-type(5) {
+      background-color: #010101; }
+    .game__tile:nth-of-type(8) {
+      background-color: #010101; }
+    .game__tile:nth-of-type(17) {
+      background-color: #010101; }
+    .game__tile:nth-of-type(22) {
+      background-color: #010101; }
+    .game__tile:nth-of-type(26) {
+      background-color: #010101; }
+  .game__number {
+    display: block; }
+  .game__status-content {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between; }
+  .game__selected-pl-wrapper {
+    height: 220px;
+    flex-basis: 24%;
+    padding: 20px;
+    border: solid 1px #ffffff;
+    border-radius: 0.25rem;
+    background-color: #010101;
+    display: inline-block; }
+  .game__selected-pl-text {
+    height: 50px; }
+  .game__token-wrapper {
+    border-radius: 50%;
+    text-align: center; }
+    .game__token-wrapper--lg {
+      width: 120px;
+      height: 120px;
+      line-height: 120px;
+      margin: 0px auto; }
+    .game__token-wrapper--sm {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      margin: 0 5px;
+      float: left; }
+    .game__token-wrapper--color-1 {
+      background-color: #b30000; }
+    .game__token-wrapper--color-2 {
+      background-color: #c23333; }
+  .game__token--lg {
+    width: 70px; }
+  .game__token--sm {
+    width: 35px; }
+  .game__dice-content {
+    flex-basis: 49%; }
+  .game__dice-wrapper {
+    height: 220px;
+    padding: 20px;
+    border-radius: 0.25rem;
+    border: solid 1px #ffffff;
+    background-color: #010101; }
+  .game__dice-container {
+    float: left;
+    padding-right: 20px; }
+  .game__dice {
+    width: 75px;
+    height: 75px;
+    border-radius: 5px; }
+  .game__dice-title {
+    margin: 0 0 20px; }
+  .game__status {
+    display: block;
+    vertical-align: top; }
 
 .selected-player {
   display: inline-block;
@@ -493,80 +619,24 @@ td {
 .selected-player--active {
   color: #b30000; }
 
-.selected-player-wrapper {
-  margin: 10px 0 10px 10px;
-  border-radius: 0.25rem;
-  border: solid 1px #ffffff;
-  display: block;
-  background-color: #010101; }
-  @media (max-width: 768px) {
-    .selected-player-wrapper {
-      margin: 10px 0 10px 0px;
-      border-radius: 0;
-      border: none; } }
-  .selected-player-wrapper__text {
-    padding: 10px;
-    margin-bottom: 0;
-    font-size: 22px; }
-    @media (max-width: 429px) {
-      .selected-player-wrapper__text {
-        font-size: 17px; } }
-
 @media (max-width: 768px) {
   .ml-auto {
     margin: 20px auto; } }
 
-.btn {
-  text-transform: uppercase; }
-  .btn__continue {
-    display: none; }
-  .btn--color {
-    background-color: #b30000;
-    color: #ffffff;
-    border: solid 1px #ffffff; }
-  .btn--hover:hover {
-    background-color: #ffffff;
-    color: #b30000; }
-
-.game-board {
+.finale-page {
+  height: 100vh;
   position: relative;
-  top: 20px; }
-  .game-board__header {
+  top: 20px;
+  padding-bottom: 50px; }
+  .finale-page__header {
     width: 100%;
     padding: 20px;
     margin-bottom: 20px;
     background-color: rgba(7, 74, 89, 0.7);
     border-radius: 0.25rem; }
-  .game-board__title {
+  .finale-page__title {
     font-family: "Game of Thrones", serif;
-    margin-bottom: 20px; }
-  .game-board__info {
-    padding: 10px;
-    margin-bottom: 0;
-    font-size: 22px; }
-    @media (max-width: 429px) {
-      .game-board__info {
-        font-size: 17px; } }
-  .game-board__tiles-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    grid-auto-flow: row; }
-  .game-board__tile {
-    height: 150px;
-    background-color: rgba(7, 74, 89, 0.7);
-    border-radius: 0.25rem;
-    padding: 10px; }
-  .game-board__dice-container {
-    display: flex; }
-  .game-board__dice {
-    width: 75px;
-    height: 75px;
-    color: #010101;
-    background-color: #ffffff;
-    padding: 10px;
-    font-size: 24px;
-    margin: 5px; }
+    margin-bottom: 30px; }
 
 .footer {
   clear: both;

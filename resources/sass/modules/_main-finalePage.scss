@@ -1,0 +1,19 @@
+.finale-page {
+	height: 100vh;
+	position: relative;
+	top: 20px;
+	padding-bottom: 50px;
+
+	&__header {
+		width: 100%;
+		padding: 20px;
+		margin-bottom: 20px;
+		background-color: rgba(7, 74, 89, 0.7);
+		border-radius: 0.25rem;
+	}
+
+	&__title {
+		font-family: $GameOfThrones;
+		margin-bottom: 30px;
+	}
+}
