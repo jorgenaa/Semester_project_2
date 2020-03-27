@@ -74,7 +74,8 @@ function rollDice() {
     dice.innerHTML = diceResult;
 
     let tile;
-
+    var getPlayer1 = new getLocalStorageItems(getPlayer1);
+    var getPlayer2 = new getLocalStorageItems(getPlayer2);
     // Token apperance condition
     if (playerTurn === 1) {
         player1Total = player1Total + diceResult;
@@ -136,11 +137,13 @@ function rollDice() {
 
     } else if (player1Total === totalTiles[29] || player2Total === totalTiles[29]) {
         modal.style.display = 'block';
+        document.getElementById('token-winner').innerHTML = getPlayer1;
     } else {
         status.innerHTML = "";
     }
 
+
+
     console.log("player1Total", player1Total);
     console.log("player2Total", player2Total);
 }
-console.log(totalTiles[29]);

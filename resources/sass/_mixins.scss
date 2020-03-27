@@ -24,8 +24,17 @@
 	}
 }
 
-//Background blur
+//Backgrounds
 @mixin backgroundBlur {
 	background-color: rgba(35, 140, 140, 0.2);
 	backdrop-filter: blur(7px);
+}
+
+@mixin backgroundBlur2 {
+	background-color: rgba(7, 74, 89, 0.5);
+	backdrop-filter: blur(7px);
+}
+
+@mixin backgroundOpacity {
+	background-color: rgba(7, 74, 89, 0.7);
 }

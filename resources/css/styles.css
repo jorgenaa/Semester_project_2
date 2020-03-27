@@ -448,7 +448,6 @@ td {
   top: 20px;
   padding-bottom: 50px; }
   .game__header {
-    padding: 10px;
     margin-bottom: 20px;
     background-color: rgba(7, 74, 89, 0.7);
     border-radius: 0.25rem; }
@@ -468,12 +467,11 @@ td {
       .game__text {
         text-align: center; } }
   .game__player {
-    margin: 10px 0 10px 10px;
+    margin: 10px 0 10px 16px;
     border-radius: 0.25rem;
     border: solid 1px #ffffff;
     display: block;
-    background-color: rgba(35, 140, 140, 0.2);
-    backdrop-filter: blur(7px); }
+    background-color: #010101; }
     @media (max-width: 768px) {
       .game__player {
         margin: 10px 0 10px 0px;
@@ -483,6 +481,8 @@ td {
     padding: 10px;
     margin-bottom: 0;
     font-size: 22px; }
+    .game__player-text--active {
+      color: #b30000; }
     @media (max-width: 429px) {
       .game__player-text {
         font-size: 17px; } }
@@ -498,7 +498,9 @@ td {
       background-color: #ffffff;
       color: #b30000; }
   .game__body {
-    padding: 10px; }
+    padding: 10px;
+    display: flex;
+    padding: 0; }
     .game__body--background {
       background-color: rgba(7, 74, 89, 0.7);
       border-radius: 0.25rem; }
@@ -526,12 +528,10 @@ td {
     @media (max-width: 429px) {
       .game__info {
         font-size: 17px; } }
-  .game__body {
-    display: flex; }
   .game__sidebar {
     flex: 1;
     margin-right: 20px;
-    background-color: rgba(35, 140, 140, 0.2);
+    background-color: rgba(7, 74, 89, 0.5);
     backdrop-filter: blur(7px); }
   .game__status-content {
     display: flex;
@@ -542,8 +542,7 @@ td {
     padding: 20px;
     border: solid 1px #ffffff;
     border-radius: 0.25rem;
-    background-color: rgba(35, 140, 140, 0.2);
-    backdrop-filter: blur(7px);
+    background-color: #010101;
     display: inline-block; }
     .game__selected-pl-wrapper:nth-child(1) {
       margin-right: 20px; }
@@ -558,11 +557,12 @@ td {
       line-height: 120px;
       margin: 0px auto; }
     .game__token-wrapper--sm {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       line-height: 60px;
-      margin: 0 5px;
-      float: left; }
+      float: right; }
+      .game__token-wrapper--sm:nth-child(2) {
+        margin-left: 5px; }
     .game__token-wrapper--color-1 {
       background-color: #b30000; }
     .game__token-wrapper--color-2 {
@@ -570,10 +570,9 @@ td {
   .game__token--lg {
     width: 70px; }
   .game__token--sm {
-    width: 35px; }
+    width: 30px; }
   .game__dice-wrapper {
     height: 100vh;
-    margin-bottom: 10px;
     padding: 20px;
     border-radius: 0.25rem;
     border: solid 1px #ffffff; }
@@ -612,15 +611,15 @@ td {
   .game__number {
     display: block; }
   .game__modal {
-    display: none;
-    background-color: rgba(35, 140, 140, 0.2);
+    background-color: rgba(7, 74, 89, 0.5);
     backdrop-filter: blur(7px);
     border: solid 1px #ffffff;
     border-radius: .25rem;
-    padding: 20px;
+    padding: 40px;
     position: fixed;
     bottom: 60%;
-    right: 20%; }
+    right: 20%;
+    text-align: center; }
 
 .selected-player {
   display: inline-block;

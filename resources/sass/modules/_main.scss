@@ -32,7 +32,7 @@
   padding-bottom: 50px;
 
   &__header {
-    padding: 10px;
+
     margin-bottom: 20px;
     background-color: rgba(7, 74, 89, 0.7);
     border-radius: 0.25rem;
@@ -61,12 +61,14 @@
   }
 
   &__player {
-    margin: 10px 0 10px 10px;
+    margin: 10px 0 10px 16px;
     border-radius: 0.25rem;
     border: solid 1px $white;
     display: block;
-    //background-color: $black;
-    @include backgroundBlur;
+    background-color: $black;
+
+    //@include backgroundBlur;
+
 
     @include media-max-768px {
       margin: 10px 0 10px 0px;
@@ -79,6 +81,11 @@
     padding: 10px;
     margin-bottom: 0;
     font-size: 22px;
+
+    &--active {
+      color: $red;
+
+    }
 
     @include for-phone-only {
       font-size: 17px;
@@ -108,9 +115,12 @@
 
   &__body {
     padding: 10px;
+    display: flex;
+    padding: 0;
 
     &--background {
-      background-color: rgba(7, 74, 89, 0.7);
+
+      @include backgroundOpacity;
       border-radius: 0.25rem;
     }
   }
@@ -158,14 +168,12 @@
     }
   }
 
-  &__body {
-    display: flex;
-  }
 
   &__sidebar {
     flex: 1;
     margin-right: 20px;
-    @include backgroundBlur;
+    @include backgroundBlur2;
+
   }
 
   &__status-content {
@@ -179,8 +187,8 @@
     padding: 20px;
     border: solid 1px $white;
     border-radius: 0.25rem;
-    //background-color: $black;
-    @include backgroundBlur;
+    background-color: $black;
+
     display: inline-block;
 
     &:nth-child(1) {
@@ -204,11 +212,15 @@
     }
 
     &--sm {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       line-height: 60px;
-      margin: 0 5px;
-      float: left;
+
+      float: right;
+
+      &:nth-child(2) {
+        margin-left: 5px;
+      }
     }
 
     &--color-1 {
@@ -226,13 +238,12 @@
     }
 
     &--sm {
-      width: 35px;
+      width: 30px;
     }
   }
 
   &__dice-wrapper {
     height: 100vh;
-    margin-bottom: 10px;
     padding: 20px;
     border-radius: 0.25rem;
     border: solid 1px $white;
@@ -299,15 +310,15 @@
   }
 
   &__modal {
-    display: none;
-    @include backgroundBlur;
+    //display: none;
+    @include backgroundBlur2;
     border: solid 1px $white;
     border-radius: .25rem;
-    padding: 20px;
+    padding: 40px;
     position: fixed;
     bottom: 60%;
     right: 20%;
-
+    text-align: center;
   }
 }
 
@@ -326,10 +337,7 @@
   font-weight: normal;
 }
 
-.selected-player--active {
-  //color: $red;
 
-}
 
 //Configurated bootsrap class
 
