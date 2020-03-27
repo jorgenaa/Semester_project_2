@@ -44,28 +44,27 @@
 	<div class="background-img background-img--gamePage">
 
 		<main class="wrapper">
-			<div class="container  game">
-				<section class="game__header">
-
+			<div class="container game">
+				<section class="game__header p-3">
 					<h2 class="game__page-title pl-3">Board Game</h2>
-
 					<div class="game__status-content">
 
 						<div class="game__selected-pl-wrapper">
-							<p class="game__selected-pl-text">Player 1:<span class="get-player-1 pl-2"></span></p>
 							<div class="game__token-wrapper game__token-wrapper--lg game__token-wrapper--color-1">
 								<img id="get-player1-token" class="game__token game__token--lg" src="" alt="Token" />
 							</div>
+							<p class="game__selected-pl-text">Player 1:<span class="get-player-1 pl-2"></span></p>
 						</div>
 
 						<div class="game__selected-pl-wrapper">
-							<p class="game__selected-pl-text">Player 2:<span class="get-player-2 pl-2"></span></p>
 							<div class="game__token-wrapper game__token-wrapper--lg game__token-wrapper--color-2">
 								<img id="get-player2-token" class="game__token game__token--lg" src="" alt="Token" />
 							</div>
+							<p class="game__selected-pl-text">Player 2:<span class="get-player-2 pl-2"></span></p>
 						</div>
+					</div><!-- game__status-content  -->
 
-						<!-- <div class=" game__dice-content">
+					<!-- <div class=" game__dice-content">
 
 							<div class="game__dice-wrapper">
 								<h3 class="game__dice-title">Click on the dice to roll it</h3>
@@ -76,8 +75,8 @@
 								<p id="status" class="game__status"></p>
 							</div>
 						</div>
-					</div> -->
-						<!--game__status-content -->
+					 -->
+
 				</section><!-- game__header -->
 
 
@@ -91,6 +90,9 @@
 				</div>
 
 				<section class=game__body>
+					<div class="game__tiles-container">
+
+					</div>
 					<aside class="game__sidebar">
 						<div class="game__dice-wrapper">
 							<h3 class="game__dice-title">Click on the dice to roll it</h3>
@@ -101,13 +103,11 @@
 							<p id="status" class="game__status"></p>
 						</div>
 					</aside><!-- game__sidebar -->
-					<div class="game__tiles-container">
-
-					</div>
 				</section><!-- game__body -->
 
 				<div id="modal" class="game__modal">
-					<h3 class="mb-4">Congratulation<span class="pl-1" id="token-winner"></span>you are the winner!</h3>
+					<h3 class="mb-4">Congratulation<span class="pl-1" id="token-winner"></span>you are the winner!
+					</h3>
 					<a href=" The-Finale_Page.html"><button type="button" class="btn game__btn game__btn--color">Click
 							here
 							to continue

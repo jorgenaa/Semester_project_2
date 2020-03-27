@@ -86,7 +86,7 @@ const gameCharacters = [{
 let container = document.querySelector('.game__body');
 
 for (let i = 0; i < gameCharacters.length; i++) {
-	container.innerHTML += `<div class="col-10 col-md-6 col-lg-4 p-3">
+	container.innerHTML += `<div class="col-10 col-md-6 col-lg-4 p-2">
 							<div class="card game__card game__card--color p-2" data-name="${gameCharacters[i].name}" data-icon="${gameCharacters[i].icon}"> 
 								<div class="game-body white-text">
 									<img class="game__icon" src="${gameCharacters[i].icon}" >

@@ -76,6 +76,7 @@ function rollDice() {
     let tile;
     var getPlayer1 = new getLocalStorageItems(getPlayer1);
     var getPlayer2 = new getLocalStorageItems(getPlayer2);
+    var tokenWinner = document.getElementById('token-winner')
     // Token apperance condition
     if (playerTurn === 1) {
         player1Total = player1Total + diceResult;
@@ -135,9 +136,13 @@ function rollDice() {
         //player2Total = player2Total - 5;
         //traps[3].enemyTrap4 = "";
 
-    } else if (player1Total === totalTiles[29] || player2Total === totalTiles[29]) {
+    } else if (player1Total === totalTiles[29]) {
         modal.style.display = 'block';
-        document.getElementById('token-winner').innerHTML = getPlayer1;
+        tokenWinner.innerHTML = this.getPlayer1;
+    } else if (player2Total === totalTiles[29]) {
+        modal.style.display = 'block';
+        tokenWinner.innerHTML = this.getPlayer2;
+
     } else {
         status.innerHTML = "";
     }

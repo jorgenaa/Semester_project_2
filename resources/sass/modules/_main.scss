@@ -61,7 +61,7 @@
   }
 
   &__player {
-    margin: 10px 0 10px 16px;
+    margin: 0px;
     border-radius: 0.25rem;
     border: solid 1px $white;
     display: block;
@@ -168,28 +168,24 @@
     }
   }
 
-
   &__sidebar {
     flex: 1;
-    margin-right: 20px;
+    margin-left: 20px;
     @include backgroundBlur2;
-
   }
 
   &__status-content {
-    display: flex;
     padding: 10px;
+    display: flex;
   }
 
   &__selected-pl-wrapper {
-    height: 220px;
-    flex-basis: 24%;
+    flex: 1;
+    display: flex;
     padding: 20px;
     border: solid 1px $white;
     border-radius: 0.25rem;
     background-color: $black;
-
-    display: inline-block;
 
     &:nth-child(1) {
       margin-right: 20px;
@@ -197,24 +193,25 @@
   }
 
   &__selected-pl-text {
-    height: 50px;
+    flex: 2;
   }
 
   &__token-wrapper {
     border-radius: 50%;
     text-align: center;
 
+
     &--lg {
       width: 120px;
       height: 120px;
       line-height: 120px;
-      margin: 0px auto;
+      margin: 0px 20px;
     }
 
     &--sm {
       width: 50px;
       height: 50px;
-      line-height: 60px;
+      line-height: 50px;
 
       float: right;
 
@@ -310,7 +307,7 @@
   }
 
   &__modal {
-    //display: none;
+    display: none;
     @include backgroundBlur2;
     border: solid 1px $white;
     border-radius: .25rem;

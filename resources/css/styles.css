@@ -467,7 +467,7 @@ td {
       .game__text {
         text-align: center; } }
   .game__player {
-    margin: 10px 0 10px 16px;
+    margin: 0px;
     border-radius: 0.25rem;
     border: solid 1px #ffffff;
     display: block;
@@ -530,24 +530,23 @@ td {
         font-size: 17px; } }
   .game__sidebar {
     flex: 1;
-    margin-right: 20px;
+    margin-left: 20px;
     background-color: rgba(7, 74, 89, 0.5);
     backdrop-filter: blur(7px); }
   .game__status-content {
-    display: flex;
-    padding: 10px; }
+    padding: 10px;
+    display: flex; }
   .game__selected-pl-wrapper {
-    height: 220px;
-    flex-basis: 24%;
+    flex: 1;
+    display: flex;
     padding: 20px;
     border: solid 1px #ffffff;
     border-radius: 0.25rem;
-    background-color: #010101;
-    display: inline-block; }
+    background-color: #010101; }
     .game__selected-pl-wrapper:nth-child(1) {
       margin-right: 20px; }
   .game__selected-pl-text {
-    height: 50px; }
+    flex: 2; }
   .game__token-wrapper {
     border-radius: 50%;
     text-align: center; }
@@ -555,11 +554,11 @@ td {
       width: 120px;
       height: 120px;
       line-height: 120px;
-      margin: 0px auto; }
+      margin: 0px 20px; }
     .game__token-wrapper--sm {
       width: 50px;
       height: 50px;
-      line-height: 60px;
+      line-height: 50px;
       float: right; }
       .game__token-wrapper--sm:nth-child(2) {
         margin-left: 5px; }
@@ -611,6 +610,7 @@ td {
   .game__number {
     display: block; }
   .game__modal {
+    display: none;
     background-color: rgba(7, 74, 89, 0.5);
     backdrop-filter: blur(7px);
     border: solid 1px #ffffff;
