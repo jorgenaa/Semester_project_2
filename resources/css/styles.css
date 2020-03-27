@@ -472,7 +472,8 @@ td {
     border-radius: 0.25rem;
     border: solid 1px #ffffff;
     display: block;
-    background-color: #010101; }
+    background-color: rgba(35, 140, 140, 0.2);
+    backdrop-filter: blur(7px); }
     @media (max-width: 768px) {
       .game__player {
         margin: 10px 0 10px 0px;
@@ -505,7 +506,8 @@ td {
     cursor: pointer;
     border: solid 1px #ffffff; }
     .game__card--color {
-      background-color: #010101; }
+      background-color: rgba(35, 140, 140, 0.2);
+      backdrop-filter: blur(7px); }
     .game__card--active-player1 {
       background-color: #b30000; }
     .game__card--active-player2 {
@@ -524,40 +526,27 @@ td {
     @media (max-width: 429px) {
       .game__info {
         font-size: 17px; } }
-  .game__tiles-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
-    grid-auto-flow: row; }
-  .game__tile {
-    height: 150px;
-    background-color: rgba(7, 74, 89, 0.7);
-    border-radius: 0.25rem;
-    padding: 10px; }
-    .game__tile:nth-of-type(5) {
-      background-color: #010101; }
-    .game__tile:nth-of-type(8) {
-      background-color: #010101; }
-    .game__tile:nth-of-type(17) {
-      background-color: #010101; }
-    .game__tile:nth-of-type(22) {
-      background-color: #010101; }
-    .game__tile:nth-of-type(26) {
-      background-color: #010101; }
-  .game__number {
-    display: block; }
+  .game__body {
+    display: flex; }
+  .game__sidebar {
+    flex: 1;
+    margin-right: 20px;
+    background-color: rgba(35, 140, 140, 0.2);
+    backdrop-filter: blur(7px); }
   .game__status-content {
     display: flex;
-    padding: 10px;
-    justify-content: space-between; }
+    padding: 10px; }
   .game__selected-pl-wrapper {
     height: 220px;
     flex-basis: 24%;
     padding: 20px;
     border: solid 1px #ffffff;
     border-radius: 0.25rem;
-    background-color: #010101;
+    background-color: rgba(35, 140, 140, 0.2);
+    backdrop-filter: blur(7px);
     display: inline-block; }
+    .game__selected-pl-wrapper:nth-child(1) {
+      margin-right: 20px; }
   .game__selected-pl-text {
     height: 50px; }
   .game__token-wrapper {
@@ -582,26 +571,56 @@ td {
     width: 70px; }
   .game__token--sm {
     width: 35px; }
-  .game__dice-content {
-    flex-basis: 49%; }
   .game__dice-wrapper {
-    height: 220px;
+    height: 100vh;
+    margin-bottom: 10px;
     padding: 20px;
     border-radius: 0.25rem;
-    border: solid 1px #ffffff;
-    background-color: #010101; }
+    border: solid 1px #ffffff; }
   .game__dice-container {
-    float: left;
-    padding-right: 20px; }
+    text-align: center; }
   .game__dice {
     width: 75px;
     height: 75px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    margin: 0 auto 20px; }
   .game__dice-title {
     margin: 0 0 20px; }
   .game__status {
-    display: block;
-    vertical-align: top; }
+    display: block; }
+  .game__tiles-container {
+    flex: 4;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-auto-flow: row; }
+  .game__tile {
+    height: 150px;
+    background-color: rgba(7, 74, 89, 0.7);
+    border-radius: 0.25rem;
+    padding: 10px; }
+    .game__tile:nth-of-type(5) {
+      background-color: #010101; }
+    .game__tile:nth-of-type(8) {
+      background-color: #010101; }
+    .game__tile:nth-of-type(17) {
+      background-color: #010101; }
+    .game__tile:nth-of-type(22) {
+      background-color: #010101; }
+    .game__tile:nth-of-type(26) {
+      background-color: #010101; }
+  .game__number {
+    display: block; }
+  .game__modal {
+    display: none;
+    background-color: rgba(35, 140, 140, 0.2);
+    backdrop-filter: blur(7px);
+    border: solid 1px #ffffff;
+    border-radius: .25rem;
+    padding: 20px;
+    position: fixed;
+    bottom: 60%;
+    right: 20%; }
 
 .selected-player {
   display: inline-block;
@@ -615,9 +634,6 @@ td {
 .selected-player-two {
   padding-left: 10px;
   font-weight: normal; }
-
-.selected-player--active {
-  color: #b30000; }
 
 @media (max-width: 768px) {
   .ml-auto {

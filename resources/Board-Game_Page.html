@@ -49,7 +49,7 @@
 
 					<h2 class="game__page-title pl-3">Board Game</h2>
 
-					<div class=" game__status-content">
+					<div class="game__status-content">
 
 						<div class="game__selected-pl-wrapper">
 							<p class="game__selected-pl-text">Player 1:<span class="get-player-1 pl-2"></span></p>
@@ -65,7 +65,7 @@
 							</div>
 						</div>
 
-						<div class=" game__dice-content">
+						<!-- <div class=" game__dice-content">
 
 							<div class="game__dice-wrapper">
 								<h3 class="game__dice-title">Click on the dice to roll it</h3>
@@ -76,8 +76,8 @@
 								<p id="status" class="game__status"></p>
 							</div>
 						</div>
-					</div>
-					<!--game__status-content -->
+					</div> -->
+						<!--game__status-content -->
 				</section><!-- game__header -->
 
 
@@ -90,29 +90,31 @@
 					<img id="token2" class="game__token game__token--sm" src="" alt="">
 				</div>
 
-				<div class="modal" tabindex="-1" role="dialog">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 id="modalWinner" class="modal-title"></h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
+				<section class=game__body>
+					<aside class="game__sidebar">
+						<div class="game__dice-wrapper">
+							<h3 class="game__dice-title">Click on the dice to roll it</h3>
+							<div class="game__dice-container">
+								<img id="dice" class="game__dice" src="../resources/graphics/icons/dice-6.png"
+									alt="Dice">
 							</div>
-							<div class="modal-body">
-								<p>Modal body text goes here.</p>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-primary">Save changes</button>
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							</div>
+							<p id="status" class="game__status"></p>
 						</div>
+					</aside><!-- game__sidebar -->
+					<div class="game__tiles-container">
+
 					</div>
+				</section><!-- game__body -->
+
+				<div id="modal" class="game__modal">
+					<h3 class="mb-3">Congratulation<span></span></h3>
+					<a href=" The-Finale_Page.html"><button type="button" class="btn game__btn game__btn--color">Click
+							here
+							to continue
+							to the winner
+							page</button></a>
 				</div>
 
-				<section class="game__tiles-container">
-
-				</section>
 			</div><!-- container game -->
 
 
@@ -133,7 +135,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
-	<script src="js/boardGamePage.js"></script>
+	<script src="js/game.js"></script>
 </body>
 
 </html>

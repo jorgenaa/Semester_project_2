@@ -23,3 +23,9 @@
 		@content;
 	}
 }
+
+//Background blur
+@mixin backgroundBlur {
+	background-color: rgba(35, 140, 140, 0.2);
+	backdrop-filter: blur(7px);
+}

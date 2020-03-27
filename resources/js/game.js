@@ -66,6 +66,7 @@ document.querySelector("#dice").addEventListener("click", rollDice);
 
 function rollDice() {
     var status = document.getElementById('status');
+    var modal = document.querySelector('.game__modal');
     var diceResult = Math.floor(Math.random() * 6) + 1;
     var dice = document.querySelector(".game__dice");
     dice.style.display = "block";
@@ -73,6 +74,7 @@ function rollDice() {
     dice.innerHTML = diceResult;
 
     let tile;
+
     // Token apperance condition
     if (playerTurn === 1) {
         player1Total = player1Total + diceResult;
@@ -91,49 +93,49 @@ function rollDice() {
     // Traps condition
     if (player1Total === totalTiles[4]) {
         status.innerHTML = traps[0].enemyTrap1;
-        player1Total = player1Total - 1;
+        //player1Total = player1Total - 1;
     } else if (player2Total === totalTiles[4]) {
         status.innerHTML = traps[0].enemyTrap1;
-        player2Total = player2Total - 1;
+        //player2Total = player1Total - 1;
 
     } else if (player1Total === totalTiles[7]) {
         status.innerHTML = traps[1].enemyTrap2;
-        player1Total = player1Total - 2;
+        //player1Total = player1Total - 2;
         //traps[0].enemyTrap1 = "";
     } else if (player2Total === totalTiles[7]) {
         status.innerHTML = traps[1].enemyTrap2;
-        player2Total = player2Total - 2;
+        //player2Total = player2Total - 2;
         //traps[0].enemyTrap1 = "";
 
     } else if (player1Total === totalTiles[16]) {
         status.innerHTML = traps[2].enemyTrap3;
-        player1Total = player1Total - 3;
+        //player1Total = player1Total - 3;
         //traps[1].enemyTrap2 = "";
     } else if (player2Total === totalTiles[16]) {
         status.innerHTML = traps[2].enemyTrap3;
-        player2Total = player1Total - 3;
+        //player2Total = player1Total - 3;
         //traps[1].enemyTrap2 = "";
 
     } else if (player1Total === totalTiles[21]) {
         status.innerHTML = traps[3].enemyTrap4;
-        player1Total = player1Total - 4;
+        //player1Total = player1Total - 4;
         //traps[2].enemyTrap3 = "";
     } else if (player2Total === totalTiles[21]) {
         status.innerHTML = traps[3].enemyTrap4;
-        player2Total = player2Total - 4;
+        //player2Total = player2Total - 4;
         //traps[2].enemyTrap3 = "";
 
     } else if (player1Total === totalTiles[25]) {
         status.innerHTML = traps[4].enemyTrap5;
-        player1Total = player1Total - 5;
-        traps[3].enemyTrap4 = "";
+        //player1Total = player1Total - 5;
+        //traps[3].enemyTrap4 = "";
     } else if (player2Total === totalTiles[25]) {
         status.innerHTML = traps[4].enemyTrap5;
-        player2Total = player2Total - 5;
+        //player2Total = player2Total - 5;
         //traps[3].enemyTrap4 = "";
 
-    } else if (player1Total === totalTiles[31] || player2Total === totalTiles[31]) {
-        $('#myModal').modal('show')
+    } else if (player1Total === totalTiles[29] || player2Total === totalTiles[29]) {
+        modal.style.display = 'block';
     } else {
         status.innerHTML = "";
     }
@@ -141,3 +143,4 @@ function rollDice() {
     console.log("player1Total", player1Total);
     console.log("player2Total", player2Total);
 }
+console.log(totalTiles[29]);

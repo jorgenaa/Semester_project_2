@@ -192,7 +192,7 @@ function activateCard(event) {
 
 //Continue game function
 
-let continueButton = document.querySelector('#continue');
+let continueButton = document.getElementById('continue');
 continueButton.addEventListener('click', toggleContinueButton);
 
 function toggleContinueButton() {
