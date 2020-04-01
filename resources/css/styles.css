@@ -490,6 +490,8 @@ td {
     text-transform: uppercase; }
     .game__btn--continue {
       display: none; }
+    .game__btn--close {
+      color: #ffffff; }
     .game__btn--color {
       background-color: #b30000;
       color: #ffffff;
@@ -504,6 +506,8 @@ td {
     .game__body--background {
       background-color: rgba(7, 74, 89, 0.7);
       border-radius: 0.25rem; }
+    .game__body--column {
+      flex-direction: column; }
   .game__card {
     cursor: pointer;
     border: solid 1px #ffffff; }
@@ -531,8 +535,8 @@ td {
   .game__sidebar {
     flex: 1;
     margin-left: 20px;
-    background-color: rgba(7, 74, 89, 0.5);
-    backdrop-filter: blur(7px); }
+    border-radius: 0.25rem;
+    background-color: rgba(7, 74, 89, 0.7); }
   .game__status-content {
     padding: 10px;
     display: flex; }
@@ -572,16 +576,15 @@ td {
     width: 30px; }
   .game__dice-wrapper {
     height: 100vh;
-    padding: 20px;
-    border-radius: 0.25rem;
-    border: solid 1px #ffffff; }
+    padding: 20px; }
   .game__dice-container {
     text-align: center; }
   .game__dice {
     width: 75px;
     height: 75px;
     border-radius: 5px;
-    margin: 0 auto 20px; }
+    margin: 0 auto 20px;
+    cursor: pointer; }
   .game__dice-title {
     margin: 0 0 20px; }
   .game__status {
@@ -614,12 +617,17 @@ td {
     background-color: rgba(7, 74, 89, 0.5);
     backdrop-filter: blur(7px);
     border: solid 1px #ffffff;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     padding: 40px;
     position: fixed;
     bottom: 60%;
     right: 20%;
     text-align: center; }
+  .game__title {
+    text-align: center;
+    margin: 20px; }
+  .game__chair-wrapper {
+    margin: 0 auto; }
 
 .selected-player {
   display: inline-block;

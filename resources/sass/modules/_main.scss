@@ -1,345 +1,368 @@
 .background-img {
-  background-position: inherit;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+	background-position: inherit;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 
-  &--characterPage {
-    background-image: url("../img/castle.jpg");
-  }
+	&--characterPage {
+		background-image: url("../img/castle.jpg");
+	}
 
-  &--gamePage {
-    background-image: url("../img/map.jpg");
-  }
+	&--gamePage {
+		background-image: url("../img/map.jpg");
+	}
 
-  &--finalePage {
-    background-image: url("../img/trees.jpg");
-  }
+	&--finalePage {
+		background-image: url("../img/trees.jpg");
+
+
+	}
 }
 
 .wrapper {
-  min-height: 100%;
-  margin-bottom: -50px;
+	min-height: 100%;
+	margin-bottom: -50px;
 }
 
 .push {
-  height: 250px;
+	height: 250px;
 }
 
 .game {
-  position: relative;
-  top: 20px;
-  padding-bottom: 50px;
+	position: relative;
+	top: 20px;
+	padding-bottom: 50px;
 
-  &__header {
+	&__header {
+		margin-bottom: 20px;
+		background-color: rgba(7, 74, 89, 0.7);
+		border-radius: 0.25rem;
+	}
 
-    margin-bottom: 20px;
-    background-color: rgba(7, 74, 89, 0.7);
-    border-radius: 0.25rem;
-  }
+	&__page-title {
+		font-family: $GameOfThrones;
+		padding: 20px 0;
 
-  &__page-title {
-    font-family: $GameOfThrones;
-    padding: 20px 0;
+		@include for-tablet-only {
+			font-size: 26px;
+			text-align: center;
+		}
 
-    @include for-tablet-only {
-      font-size: 26px;
-      text-align: center;
-    }
+		@include for-phone-only {
+			line-height: 1.5;
+		}
+	}
 
-    @include for-phone-only {
-      line-height: 1.5;
-    }
-  }
+	&__text {
+		margin-bottom: 30px;
 
-  &__text {
-    margin-bottom: 30px;
+		@include for-tablet-only {
+			text-align: center;
+		}
+	}
 
-    @include for-tablet-only {
-      text-align: center;
-    }
-  }
+	&__player {
+		margin: 0px;
+		border-radius: 0.25rem;
+		border: solid 1px $white;
+		display: block;
+		background-color: $black;
 
-  &__player {
-    margin: 0px;
-    border-radius: 0.25rem;
-    border: solid 1px $white;
-    display: block;
-    background-color: $black;
+		//@include backgroundBlur;
 
-    //@include backgroundBlur;
+		@include media-max-768px {
+			margin: 10px 0 10px 0px;
+			border-radius: 0;
+			border: none;
+		}
+	}
+
+	&__player-text {
+		padding: 10px;
+		margin-bottom: 0;
+		font-size: 22px;
+
+		&--active {
+			color: $red;
+		}
+
+		@include for-phone-only {
+			font-size: 17px;
+		}
+	}
+
+	&__btn {
+		text-transform: uppercase;
+
+		&--continue {
+			display: none;
+		}
+
+		&--close {
+			color: $white;
+		}
+
+		&--color {
+			background-color: $red;
+			color: $white;
+			border: solid 1px $white;
+		}
+
+		&--hover {
+			&:hover {
+				background-color: $white;
+				color: $red;
+			}
+		}
+	}
+
+	&__body {
+		padding: 10px;
+		display: flex;
+		padding: 0;
+
+		&--background {
+			@include backgroundOpacity;
+			border-radius: 0.25rem;
+		}
+
+		&--column {
+			flex-direction: column;
+		}
+	}
+
+	&__card {
+		cursor: pointer;
+		border: solid 1px $white;
+
+		&--color {
+			//background-color: #010101;
+			@include backgroundBlur;
+		}
+
+		&--active-player1 {
+			background-color: $red;
+		}
+
+		&--active-player2 {
+			background-color: $tintedRed;
+		}
+	}
+
+	&__icon {
+		width: 150px;
+		display: inline-block;
+		color: white;
+	}
+
+	&__table {
+		height: 220px;
+		color: $white;
+	}
+
+	//////////////////////////////
+	//       Board Game Page
+	//////////////////////////////
+
+	&__info {
+		padding: 10px;
+		margin-bottom: 0;
+		font-size: 22px;
+
+		@include for-phone-only {
+			font-size: 17px;
+		}
+	}
+
+	&__sidebar {
+		flex: 1;
+		margin-left: 20px;
+		border-radius: 0.25rem;
+		//border: solid 1px $white;
+		@include backgroundOpacity;
+	}
+
+	&__status-content {
+		padding: 10px;
+		display: flex;
+	}
+
+	&__selected-pl-wrapper {
+		flex: 1;
+		display: flex;
+		padding: 20px;
+		border: solid 1px $white;
+		border-radius: 0.25rem;
+		background-color: $black;
+
+		&:nth-child(1) {
+			margin-right: 20px;
+		}
+	}
+
+	&__selected-pl-text {
+		flex: 2;
+	}
+
+	&__token-wrapper {
+		border-radius: 50%;
+		text-align: center;
 
 
-    @include media-max-768px {
-      margin: 10px 0 10px 0px;
-      border-radius: 0;
-      border: none;
-    }
-  }
+		&--lg {
+			width: 120px;
+			height: 120px;
+			line-height: 120px;
+			margin: 0px 20px;
+		}
 
-  &__player-text {
-    padding: 10px;
-    margin-bottom: 0;
-    font-size: 22px;
+		&--sm {
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
 
-    &--active {
-      color: $red;
+			float: right;
 
-    }
+			&:nth-child(2) {
+				margin-left: 5px;
+			}
+		}
 
-    @include for-phone-only {
-      font-size: 17px;
-    }
-  }
+		&--color-1 {
+			background-color: $red;
+		}
 
-  &__btn {
-    text-transform: uppercase;
+		&--color-2 {
+			background-color: $tintedRed;
+		}
+	}
 
-    &--continue {
-      display: none;
-    }
+	&__token {
+		&--lg {
+			width: 70px;
+		}
 
-    &--color {
-      background-color: $red;
-      color: $white;
-      border: solid 1px $white;
-    }
+		&--sm {
+			width: 30px;
+		}
 
-    &--hover {
-      &:hover {
-        background-color: $white;
-        color: $red;
-      }
-    }
-  }
+	}
 
-  &__body {
-    padding: 10px;
-    display: flex;
-    padding: 0;
+	&__dice-wrapper {
+		height: 100vh;
+		padding: 20px;
 
-    &--background {
+	}
 
-      @include backgroundOpacity;
-      border-radius: 0.25rem;
-    }
-  }
+	&__dice-container {
+		text-align: center;
+	}
 
-  &__card {
-    cursor: pointer;
-    border: solid 1px $white;
+	&__dice {
+		width: 75px;
+		height: 75px;
+		border-radius: 5px;
+		margin: 0 auto 20px;
+		cursor: pointer;
+	}
 
-    &--color {
-      //background-color: #010101;
-      @include backgroundBlur;
-    }
+	&__dice-title {
+		margin: 0 0 20px;
+	}
 
-    &--active-player1 {
-      background-color: $red;
-    }
+	&__status {
+		display: block;
+	}
 
-    &--active-player2 {
-      background-color: $tintedRed;
-    }
-  }
+	&__tiles-container {
+		flex: 4;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-gap: 10px;
+		grid-auto-flow: row;
+	}
 
-  &__icon {
-    width: 150px;
-    display: inline-block;
-    color: white;
-  }
+	&__tile {
+		height: 150px;
+		background-color: rgba(7, 74, 89, 0.7);
+		border-radius: 0.25rem;
+		padding: 10px;
 
-  &__table {
-    height: 220px;
-    color: $white;
-  }
+		&:nth-of-type(5) {
+			background-color: $black;
+		}
 
-  //////////////////////////////
-  //       Board Game Page
-  //////////////////////////////
+		&:nth-of-type(8) {
+			background-color: $black;
+		}
 
-  &__info {
-    padding: 10px;
-    margin-bottom: 0;
-    font-size: 22px;
+		&:nth-of-type(17) {
+			background-color: $black;
+		}
 
-    @include for-phone-only {
-      font-size: 17px;
-    }
-  }
+		&:nth-of-type(22) {
+			background-color: $black;
+		}
 
-  &__sidebar {
-    flex: 1;
-    margin-left: 20px;
-    @include backgroundBlur2;
-  }
+		&:nth-of-type(26) {
+			background-color: $black;
+		}
+	}
 
-  &__status-content {
-    padding: 10px;
-    display: flex;
-  }
+	&__number {
+		display: block;
+	}
 
-  &__selected-pl-wrapper {
-    flex: 1;
-    display: flex;
-    padding: 20px;
-    border: solid 1px $white;
-    border-radius: 0.25rem;
-    background-color: $black;
+	&__modal {
+		display: none;
+		@include backgroundBlur2;
+		border: solid 1px $white;
+		border-radius: 0.25rem;
+		padding: 40px;
+		position: fixed;
+		bottom: 60%;
+		right: 20%;
+		text-align: center;
+	}
 
-    &:nth-child(1) {
-      margin-right: 20px;
-    }
-  }
+	///////////////////////////////////
+	// 			The final Page
+	///////////////////////////////////
 
-  &__selected-pl-text {
-    flex: 2;
-  }
+	&__title {
+		text-align: center;
+		margin: 20px;
+	}
 
-  &__token-wrapper {
-    border-radius: 50%;
-    text-align: center;
+	&__chair-wrapper {
+		margin: 0 auto;
+	}
 
+	&__token-toggle-1 {}
 
-    &--lg {
-      width: 120px;
-      height: 120px;
-      line-height: 120px;
-      margin: 0px 20px;
-    }
+	&__token-toggle-2 {}
 
-    &--sm {
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-
-      float: right;
-
-      &:nth-child(2) {
-        margin-left: 5px;
-      }
-    }
-
-    &--color-1 {
-      background-color: $red;
-    }
-
-    &--color-2 {
-      background-color: $tintedRed;
-    }
-  }
-
-  &__token {
-    &--lg {
-      width: 70px;
-    }
-
-    &--sm {
-      width: 30px;
-    }
-  }
-
-  &__dice-wrapper {
-    height: 100vh;
-    padding: 20px;
-    border-radius: 0.25rem;
-    border: solid 1px $white;
-
-  }
-
-  &__dice-container {
-    text-align: center;
-  }
-
-  &__dice {
-    width: 75px;
-    height: 75px;
-    border-radius: 5px;
-    margin: 0 auto 20px;
-  }
-
-  &__dice-title {
-    margin: 0 0 20px;
-  }
-
-  &__status {
-    display: block;
-
-  }
-
-  &__tiles-container {
-    flex: 4;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
-    grid-auto-flow: row;
-  }
-
-  &__tile {
-    height: 150px;
-    background-color: rgba(7, 74, 89, 0.7);
-    border-radius: 0.25rem;
-    padding: 10px;
-
-    &:nth-of-type(5) {
-      background-color: $black;
-    }
-
-    &:nth-of-type(8) {
-      background-color: $black;
-    }
-
-    &:nth-of-type(17) {
-      background-color: $black;
-    }
-
-    &:nth-of-type(22) {
-      background-color: $black;
-    }
-
-    &:nth-of-type(26) {
-      background-color: $black;
-    }
-  }
-
-  &__number {
-    display: block;
-  }
-
-  &__modal {
-    display: none;
-    @include backgroundBlur2;
-    border: solid 1px $white;
-    border-radius: .25rem;
-    padding: 40px;
-    position: fixed;
-    bottom: 60%;
-    right: 20%;
-    text-align: center;
-  }
 }
 
 .selected-player {
-  display: inline-block;
-  vertical-align: top;
-  position: absolute;
-  right: 24px;
-  font-size: large;
-  color: $white;
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	right: 24px;
+	font-size: large;
+	color: $white;
 }
 
 .selected-player-one,
 .selected-player-two {
-  padding-left: 10px;
-  font-weight: normal;
+	padding-left: 10px;
+	font-weight: normal;
 }
-
-
 
 //Configurated bootsrap class
 
 .ml-auto {
-  @include media-max-768px {
-    margin: 20px auto;
-  }
+	@include media-max-768px {
+		margin: 20px auto;
+	}
 }
