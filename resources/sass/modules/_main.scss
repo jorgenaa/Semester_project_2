@@ -205,7 +205,12 @@
 	&__token-wrapper {
 		border-radius: 50%;
 		text-align: center;
-
+		&--toggle-1 {
+			display: none;
+		}
+		&--toggle-2 {
+			display: none;
+		}
 		&--lg {
 			width: 120px;
 			height: 120px;
@@ -338,7 +343,6 @@
 		&--hidden {
 			display: none;
 		}
-
 	}
 
 	&__fireflies {
@@ -348,19 +352,16 @@
 		top: -20px;
 		height: 21px;
 		position: absolute;
-		animation:
-			leftright 24s infinite cubic-bezier(.39, .0, .63, 1),
+		animation: leftright 24s infinite cubic-bezier(.39, .0, .63, 1),
 			updown 8s infinite 1.25s cubic-bezier(.39, .0, .63, 1);
 
 		&:nth-of-type(2) {
 			animation-delay: 4s;
 			animation-duration: 17s, 8s;
-			animation-fill-mode: backwards, backwards
+			animation-fill-mode: backwards, backwards;
 		}
-
 	}
 }
-
 
 .selected-player {
 	display: inline-block;

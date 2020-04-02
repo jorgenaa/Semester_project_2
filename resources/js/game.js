@@ -1,11 +1,15 @@
+let player1Total = 0,
+	player2Total = 0,
+	playerTurn = 1;
+
 //Fetching the localstorage content
 
-let getPlayer1 = localStorage.getItem('Player1'),
-	getPlayer2 = localStorage.getItem('Player2');
 
-(() => {
-	let player1Token = JSON.parse(localStorage.getItem('Player1Token'));
-	let player2Token = JSON.parse(localStorage.getItem('Player2Token'));
+(function getLocalStorageItems() {
+	let getPlayer1 = localStorage.getItem('Player1');
+	getPlayer2 = localStorage.getItem('Player2');
+	player1Token = JSON.parse(localStorage.getItem('Player1Token'));
+	player2Token = JSON.parse(localStorage.getItem('Player2Token'));
 	document.getElementById('get-player1-token').src = player1Token;
 	document.getElementById('get-player2-token').src = player2Token;
 	document.querySelector('.get-player-1').innerHTML = getPlayer1;
@@ -15,7 +19,10 @@ let getPlayer1 = localStorage.getItem('Player1'),
 	token1.src = player1Token;
 	let token2 = document.getElementById('token2');
 	token2.src = player2Token;
+
 })();
+
+
 //Tokens for the tiles
 
 let token1Wrapper = document.getElementById('token1-wrapper');
@@ -58,15 +65,14 @@ const traps = {
 	}
 };
 
+
 //Dice roll event function
 
-let player1Total = 0,
-	player2Total = 0,
-	playerTurn = 1;
+
 
 document.querySelector('#dice').addEventListener('click', rollDice);
 
-function rollDice() {
+function rollDice(val) {
 	let status = document.getElementById('status');
 	let modal = document.querySelector('.game__modal');
 	let diceResult = Math.floor(Math.random() * 6) + 1;
@@ -78,6 +84,8 @@ function rollDice() {
 	let tile;
 
 	let tokenWinner = document.getElementById('token-winner');
+	let tokenWinner1 = document.querySelector('.game__token-wrapper--toggle-1');
+	let tokenWinner2 = document.querySelector('.game__token-wrapper--toggle-2');
 
 	// Close modal & refresh page event
 	document.getElementById('close').addEventListener('click', function(e) {
@@ -116,16 +124,19 @@ function rollDice() {
 		modal.style.display = 'block';
 		player1Total = Math.round(30);
 		tokenWinner.innerHTML = getPlayer1;
+		tokenWinner1.style.display = 'block';
 	} else if (player2Total >= 30) {
 		modal.style.display = 'block';
 		player2Total = Math.round(30);
 		tokenWinner.innerHTML = getPlayer2;
+		tokenWinner2.style.display = 'block';
 	} else {
 		status.innerHTML = '';
 	}
 
 	console.log('player1Total', player1Total);
 	console.log('player2Total', player2Total);
+
 }
 
 // function move token backwards

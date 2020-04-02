@@ -561,6 +561,10 @@ td {
   .game__token-wrapper {
     border-radius: 50%;
     text-align: center; }
+    .game__token-wrapper--toggle-1 {
+      display: none; }
+    .game__token-wrapper--toggle-2 {
+      display: none; }
     .game__token-wrapper--lg {
       width: 120px;
       height: 120px;
