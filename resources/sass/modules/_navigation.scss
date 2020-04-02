@@ -26,9 +26,23 @@
 	}
 }
 
-.navbar-toggler {
-	color: $white;
-	border-color: $white;
+.hamburger {
+
+
+	&__element {
+		width: 35px;
+		height: 3px;
+		background-color: $white;
+		margin: 7px 0;
+
+	}
+}
+
+// Customize the hamburger menu 
+.navbar-toggler:focus,
+.navbar-toggler:active {
+	outline: none;
+	box-shadow: none;
 }
 
 
