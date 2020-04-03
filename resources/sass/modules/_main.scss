@@ -139,11 +139,11 @@
 		}
 
 		&--active-player1 {
-			background-color: $red;
+			background-color: $lightTeal;
 		}
 
 		&--active-player2 {
-			background-color: $tintedRed;
+			background-color: $red;
 		}
 	}
 
@@ -205,12 +205,15 @@
 	&__token-wrapper {
 		border-radius: 50%;
 		text-align: center;
+
 		&--toggle-1 {
 			display: none;
 		}
+
 		&--toggle-2 {
 			display: none;
 		}
+
 		&--lg {
 			width: 120px;
 			height: 120px;
@@ -231,15 +234,16 @@
 		}
 
 		&--color-1 {
-			background-color: $red;
+			background-color: $lightTeal;
 		}
 
 		&--color-2 {
-			background-color: $tintedRed;
+			background-color: $red;
 		}
 	}
 
 	&__token {
+
 		&--lg {
 			width: 70px;
 		}
@@ -275,6 +279,7 @@
 
 	&__status {
 		display: block;
+		padding: 10px;
 	}
 
 	&__tiles-container {
@@ -317,15 +322,26 @@
 	}
 
 	&__modal {
-		display: none;
 		@include backgroundBlur2;
 		border: solid 1px $white;
 		border-radius: 0.25rem;
 		padding: 40px;
 		position: fixed;
 		bottom: 60%;
-		right: 20%;
+		right: 25%;
 		text-align: center;
+
+		&--penalty {
+			display: none;
+		}
+
+		&--winner {
+			display: none;
+		}
+	}
+
+	&__icon-close {
+		color: $white;
 	}
 
 	///////////////////////////////////

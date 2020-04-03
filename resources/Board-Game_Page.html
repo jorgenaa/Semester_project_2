@@ -94,8 +94,20 @@
 					</aside><!-- game__sidebar -->
 				</section><!-- game__body -->
 
-				<div id="modal" class="game__modal">
-					<button id="close" type="button" class="close game__btn game__btn--close">
+				<div id="modal-penalty" class="game__modal game__modal--penalty">
+					<button id="close1" type="button" class="close game__btn game__btn--close">
+						<span class="game__icon-close">&times;</span>
+					</button>
+					<p id="modal-status" class="game__status"></p>
+					<button type="button" class="btn game__btn game__btn--color">Click
+						here
+						to continue
+						to the game
+					</button>
+				</div>
+
+				<div id="modal-winner" class="game__modal game__modal--winner">
+					<button id="close2" type="button" class="close game__btn game__btn--close">
 						<span>&times;</span>
 					</button>
 					<h3 class="mb-4">Congratulations<span class="p-2" id="token-winner"></span>you have won the game!

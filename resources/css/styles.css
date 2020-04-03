@@ -522,9 +522,9 @@ td {
       background-color: rgba(35, 140, 140, 0.2);
       backdrop-filter: blur(7px); }
     .game__card--active-player1 {
-      background-color: #b30000; }
+      background-color: #238c8c; }
     .game__card--active-player2 {
-      background-color: #c23333; }
+      background-color: #b30000; }
   .game__icon {
     width: 150px;
     display: inline-block;
@@ -578,9 +578,9 @@ td {
       .game__token-wrapper--sm:nth-child(2) {
         margin-left: 5px; }
     .game__token-wrapper--color-1 {
-      background-color: #b30000; }
+      background-color: #238c8c; }
     .game__token-wrapper--color-2 {
-      background-color: #c23333; }
+      background-color: #b30000; }
   .game__token--lg {
     width: 70px; }
   .game__token--sm {
@@ -602,7 +602,8 @@ td {
   .game__dice-title {
     margin: 0 0 20px; }
   .game__status {
-    display: block; }
+    display: block;
+    padding: 10px; }
   .game__tiles-container {
     flex: 4;
     display: grid;
@@ -627,7 +628,6 @@ td {
   .game__number {
     display: block; }
   .game__modal {
-    display: none;
     background-color: rgba(7, 74, 89, 0.5);
     backdrop-filter: blur(7px);
     border: solid 1px #ffffff;
@@ -635,8 +635,14 @@ td {
     padding: 40px;
     position: fixed;
     bottom: 60%;
-    right: 20%;
+    right: 25%;
     text-align: center; }
+    .game__modal--penalty {
+      display: none; }
+    .game__modal--winner {
+      display: none; }
+  .game__icon-close {
+    color: #ffffff; }
   .game__title {
     text-align: center;
     margin: 20px; }
