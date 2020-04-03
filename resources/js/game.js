@@ -38,25 +38,25 @@ for (let i = 1; i < 31; i++) {
 // Array of traps
 
 const traps = {
-	6: {
+	5: {
 		description: "Pay tax penalty and go one step back",
 		penalty: 1
 	},
-	9: {
+	8: {
 		description: "You are starving. Go two steps back and find something to eat",
 		penalty: 2
 	},
 
-	18: {
+	17: {
 		description: "Deanerys’s Dragons have blocked the road ahead. Go three step back",
 		penalty: 3
 	},
-	23: {
+	22: {
 		description: "Some local farmers are in great danger and need your help. Go four steps back",
 		penalty: 4
 	},
 
-	27: {
+	26: {
 		description: "A storm is coming. Go five steps back and take shelter",
 		penalty: 5
 	}
@@ -117,10 +117,14 @@ function rollDice() {
 
 		// if the trap exists, minus the penalty from the total
 		if (trap) {
-			let player1Status = traps[player1Total];
+			let player1Status = trap;
+			//let player1Status = traps[player1Total];
+			//let player2Status = traps[player2Total];
 			player1Total = player1Total - trap.penalty;
+			player2Total = player2Total - trap.penalty;
 			modalPenalty.style.display = 'block';
 			modalStatus.innerHTML = player1Status.description;
+			modalStatus.innerHTML = player2Status.description;
 		}
 
 		tile = document.getElementById(player1Total);
