@@ -48,55 +48,61 @@
 
 			<div class="container game">
 
-				<div class="finale-page__header">
-					<h2 class="finale-page__title">The Finale Page</h2>
-
+				<div class="game__header p-3">
+					<h2 class="game__page-title">The Finale Page</h2>
+					<h3 class="game__title m-auto pt-2">Congratulations<span class="pl-2" id="playerWinner"></span> you
+						have won the
+						game!</h3>
 
 				</div><!-- finale-page__header -->
 
-				<section id="animation-container"
-					class="fireflies p-2 game__body game__body--background justify-content-center">
+				<section id="animation-container" class="p-2 game__body game__body--background justify-content-center">
 					<div class="row">
-						<h2 class="game__title">Congratulations You have won the game!</h2>
-						<div
-							class="game__token-wrapper game__token-wrapper--toggle-1 game__token-wrapper--lg game__token-wrapper--color-1">
-							<img id="get-player1-token" class="game__token game__token--lg" src="" alt="Token" />
-						</div>
-						<div
-							class="game__token-wrapper game__token-wrapper--toggle-2 game__token-wrapper--lg game__token-wrapper--color-2">
-							<img id="get-player2-token" class="game__token game__token--lg" src="" alt="Token" />
-						</div>
 
-						<div>
-							<img src="/resources/graphics/2x/sword@2x.png" alt="Sword">
-						</div>
-						<div>
-							<img src="/resources/graphics/2x/sword-right@2x.png" alt="Sword">
-						</div>
-						<div class="col-6 p-5 m-auto">
+						<div class="m-auto col-10">
 							<img id="chairImg" class="game__chair" src="/resources/graphics/144ppi/chair.png"
 								alt="Chair">
+							<div
+								class="game__token-wrapper game__token-wrapper--toggle-1 game__token-wrapper--lg game__token-wrapper--color-1">
+								<img id="get-winner-token-1" class="game__token game__token--lg" src="" alt="Token" />
+							</div>
+							<div
+								class="game__token-wrapper game__token-wrapper--toggle-2 game__token-wrapper--lg game__token-wrapper--color-2">
+								<img id="get-winner-token-2" class="game__token game__token--lg" src="" alt="Token" />
+							</div>
 						</div>
-						<canvas>
 
-						</canvas>
 					</div>
 
 				</section>
 
 
+				<canvas>
 
+				</canvas>
 
 
 			</div><!-- container finale-page-->
 
 	</div><!-- background-img background-img--finalePage -->
 
-	<div class="push"></div>
 	</main>
 	</div><!-- background-img -->
 	<footer class="footer">
-
+		<div class="icons">
+			<a href="https://twitter.com/explore" class="icons__link icons__link--hover">
+				<i class="fab fa-twitter fa-2x"></i>
+			</a>
+			<a href="https://www.facebook.com/" class="icons__link icons__link--hover">
+				<i class="fab fa-facebook fa-2x"></i>
+			</a>
+			<a href="https://www.youtube.com/" class="icons__link icons__link--hover">
+				<i class="fab fa-youtube fa-2x"></i>
+			</a>
+			<a href="" class="icons__link icons__link--hover">
+				<i class="fas fa-envelope fa-2x"></i>
+			</a>
+		</div>
 	</footer>
 
 	<script src="js/jquery-3.4.1.min.js"></script>
@@ -107,7 +113,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
-	<script src="js/game.js"></script>
+
 	<script src="js/winner.js"></script>
 </body>
 

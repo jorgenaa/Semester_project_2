@@ -2,8 +2,311 @@
   font-family: 'Game of Thrones';
   src: url("../fonts/Game_of_thrones/Game of Thrones.ttf"); }
 @font-face {
+  font-family: 'Nanum Gothic';
+  src: url("../fonts/Nanum_Gothic/NanumGothic-Bold.ttf"); }
+@font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-Regular.ttf"); }
+.game__fireflies:nth-child(1) {
+  top: 229px;
+  left: 98px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(1) {
+    top: 401px;
+    left: 24px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(1) {
+    top: 173px;
+    left: 105px; } }
+.game__fireflies:nth-child(2) {
+  top: 577px;
+  left: 33px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(2) {
+    top: 381px;
+    left: 74px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(2) {
+    top: 114px;
+    left: 123px; } }
+.game__fireflies:nth-child(3) {
+  top: 811px;
+  left: 199px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(3) {
+    top: 281px;
+    left: 104px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(3) {
+    top: 107px;
+    left: 87px; } }
+.game__fireflies:nth-child(4) {
+  top: 810px;
+  left: 523px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(4) {
+    top: 257px;
+    left: 198px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(4) {
+    top: 32px;
+    left: 104px; } }
+.game__fireflies:nth-child(5) {
+  top: 731px;
+  left: 124px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(5) {
+    top: 51px;
+    left: 281px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(5) {
+    top: 117px;
+    left: 8px; } }
+.game__fireflies:nth-child(6) {
+  top: 789px;
+  left: 362px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(6) {
+    top: 78px;
+    left: 26px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(6) {
+    top: 5px;
+    left: 162px; } }
+.game__fireflies:nth-child(7) {
+  top: 429px;
+  left: 513px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(7) {
+    top: 270px;
+    left: 409px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(7) {
+    top: 46px;
+    left: 181px; } }
+.game__fireflies:nth-child(8) {
+  top: 970px;
+  left: 219px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(8) {
+    top: 34px;
+    left: 197px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(8) {
+    top: 175px;
+    left: 6px; } }
+.game__fireflies:nth-child(9) {
+  top: 732px;
+  left: 453px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(9) {
+    top: 449px;
+    left: 398px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(9) {
+    top: 18px;
+    left: 193px; } }
+.game__fireflies:nth-child(10) {
+  top: 346px;
+  left: 434px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(10) {
+    top: 9px;
+    left: 289px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(10) {
+    top: 60px;
+    left: 58px; } }
+.game__fireflies:nth-child(11) {
+  top: 999px;
+  left: 171px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(11) {
+    top: 152px;
+    left: 480px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(11) {
+    top: 33px;
+    left: 59px; } }
+.game__fireflies:nth-child(12) {
+  top: 275px;
+  left: 392px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(12) {
+    top: 89px;
+    left: 366px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(12) {
+    top: 56px;
+    left: 80px; } }
+.game__fireflies:nth-child(13) {
+  top: 303px;
+  left: 403px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(13) {
+    top: 339px;
+    left: 86px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(13) {
+    top: 41px;
+    left: 134px; } }
+.game__fireflies:nth-child(14) {
+  top: 416px;
+  left: 319px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(14) {
+    top: 468px;
+    left: 72px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(14) {
+    top: 9px;
+    left: 188px; } }
+.game__fireflies:nth-child(15) {
+  top: 543px;
+  left: 493px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(15) {
+    top: 318px;
+    left: 446px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(15) {
+    top: 129px;
+    left: 178px; } }
+.game__fireflies:nth-child(16) {
+  top: 23px;
+  left: 481px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(16) {
+    top: 122px;
+    left: 216px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(16) {
+    top: 56px;
+    left: 32px; } }
+.game__fireflies:nth-child(17) {
+  top: 338px;
+  left: 437px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(17) {
+    top: 386px;
+    left: 428px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(17) {
+    top: 148px;
+    left: 16px; } }
+.game__fireflies:nth-child(18) {
+  top: 911px;
+  left: 297px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(18) {
+    top: 307px;
+    left: 350px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(18) {
+    top: 91px;
+    left: 93px; } }
+.game__fireflies:nth-child(19) {
+  top: 822px;
+  left: 2px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(19) {
+    top: 174px;
+    left: 81px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(19) {
+    top: 152px;
+    left: 43px; } }
+.game__fireflies:nth-child(20) {
+  top: 34px;
+  left: 258px; }
+
+@media (max-width: 668px) {
+  .game__fireflies:nth-child(20) {
+    top: 154px;
+    left: 245px; } }
+@media (max-width: 454px) {
+  .game__fireflies:nth-child(20) {
+    top: 112px;
+    left: 11px; } }
+.game__fireflies:nth-child(1) {
+  animation: updown 0s ease-in-out 1s infinite, leftright 0s ease-in-out 13s infinite; }
+
+.game__fireflies:nth-child(2) {
+  animation: updown 0s ease-in-out 20s infinite, leftright 0s ease-in-out 20s infinite; }
+
+.game__fireflies:nth-child(3) {
+  animation: updown 0s ease-in-out 12s infinite, leftright 0s ease-in-out 13s infinite; }
+
+.game__fireflies:nth-child(4) {
+  animation: updown 0s ease-in-out 18s infinite, leftright 0s ease-in-out 17s infinite; }
+
+.game__fireflies:nth-child(5) {
+  animation: updown 0s ease-in-out 9s infinite, leftright 0s ease-in-out 15s infinite; }
+
+.game__fireflies:nth-child(6) {
+  animation: updown 0s ease-in-out 14s infinite, leftright 0s ease-in-out 18s infinite; }
+
+.game__fireflies:nth-child(7) {
+  animation: updown 0s ease-in-out 9s infinite, leftright 0s ease-in-out 16s infinite; }
+
+.game__fireflies:nth-child(8) {
+  animation: updown 0s ease-in-out 5s infinite, leftright 0s ease-in-out 1s infinite; }
+
+.game__fireflies:nth-child(9) {
+  animation: updown 0s ease-in-out 6s infinite, leftright 0s ease-in-out 11s infinite; }
+
+.game__fireflies:nth-child(10) {
+  animation: updown 0s ease-in-out 12s infinite, leftright 0s ease-in-out 2s infinite; }
+
+.game__fireflies:nth-child(11) {
+  animation: updown 0s ease-in-out 18s infinite, leftright 0s ease-in-out 6s infinite; }
+
+.game__fireflies:nth-child(12) {
+  animation: updown 0s ease-in-out 19s infinite, leftright 0s ease-in-out 10s infinite; }
+
+.game__fireflies:nth-child(13) {
+  animation: updown 0s ease-in-out 17s infinite, leftright 0s ease-in-out 1s infinite; }
+
+.game__fireflies:nth-child(14) {
+  animation: updown 0s ease-in-out 4s infinite, leftright 0s ease-in-out 4s infinite; }
+
+.game__fireflies:nth-child(15) {
+  animation: updown 0s ease-in-out 20s infinite, leftright 0s ease-in-out 2s infinite; }
+
+.game__fireflies:nth-child(16) {
+  animation: updown 0s ease-in-out 6s infinite, leftright 0s ease-in-out 14s infinite; }
+
+.game__fireflies:nth-child(17) {
+  animation: updown 0s ease-in-out 16s infinite, leftright 0s ease-in-out 2s infinite; }
+
+.game__fireflies:nth-child(18) {
+  animation: updown 0s ease-in-out 9s infinite, leftright 0s ease-in-out 17s infinite; }
+
+.game__fireflies:nth-child(19) {
+  animation: updown 0s ease-in-out 10s infinite, leftright 0s ease-in-out 7s infinite; }
+
+.game__fireflies:nth-child(20) {
+  animation: updown 0s ease-in-out 2s infinite, leftright 0s ease-in-out 13s infinite; }
+
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -39,11 +342,11 @@ body {
   margin: 0;
   color: #ffffff;
   font-size: 17px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, regular;
   letter-spacing: 1px;
   font-weight: 0.5px;
   font-style: normal; }
-  @media (max-width: 429px) {
+  @media (max-width: 454px) {
     body {
       font-size: 15px; } }
 
@@ -399,18 +702,24 @@ td {
   background-color: #010101; }
 
 .navbar__logo {
-  height: 64px; }
+  height: 64px;
+  padding-right: 16px; }
+  @media (max-width: 454px) {
+    .navbar__logo {
+      padding-right: 0; } }
 .navbar__brand {
-  color: #ffffff; }
-  @media (max-width: 643px) {
+  color: #ffffff;
+  font-family: "Nanum Gothic", sans-serif, bold;
+  margin-right: 0; }
+  @media (max-width: 668px) {
     .navbar__brand {
       display: block; } }
-  @media (max-width: 429px) {
+  @media (max-width: 454px) {
     .navbar__brand {
       display: none; } }
 @media (max-width: 991px) {
   .navbar__collapse {
-    border: 1px #a7f2e4;
+    border: 1px #57face;
     border-top-style: solid; } }
 
 .hamburger__element {
@@ -427,9 +736,9 @@ td {
 .nav-item--color {
   color: white; }
 .nav-item--hover:hover {
-  color: #a7f2e4; }
+  color: #57face; }
 .nav-item--active {
-  color: #a7f2e4; }
+  color: #57face; }
 
 .background-img {
   background-position: inherit;
@@ -447,50 +756,65 @@ td {
   min-height: 100%;
   margin-bottom: -50px; }
 
-.push {
-  height: 250px; }
-
 .game {
   position: relative;
   top: 20px;
-  padding-bottom: 50px; }
+  padding-bottom: 150px;
+  flex: 1 0 auto; }
   .game__header {
     margin-bottom: 20px;
     background-color: rgba(7, 74, 89, 0.7);
     border-radius: 0.25rem; }
   .game__page-title {
-    font-family: "Game of Thrones", serif;
-    padding: 20px 0; }
-    @media (max-width: 643px) {
+    font-family: "Game of Thrones", serif, regular;
+    padding: 0 0 24px;
+    margin-bottom: 0; }
+    @media (max-width: 668px) {
       .game__page-title {
         font-size: 26px;
         text-align: center; } }
-    @media (max-width: 429px) {
+    @media (max-width: 454px) {
       .game__page-title {
         line-height: 1.5; } }
+  .game__title {
+    font-family: "Nanum Gothic", sans-serif, bold;
+    padding: 8px;
+    margin: 0;
+    text-align: center; }
+    @media (max-width: 454px) {
+      .game__title {
+        font-size: 22px; } }
   .game__text {
-    margin-bottom: 30px; }
-    @media (max-width: 643px) {
+    margin-bottom: 16px; }
+    @media (max-width: 668px) {
       .game__text {
         text-align: center; } }
-  .game__player {
-    margin: 0px;
-    border-radius: 0.25rem;
+  .game__box {
+    padding: 20px;
     border: solid 1px #ffffff;
-    display: block;
-    background-color: #010101; }
+    border-radius: 0.25rem; }
     @media (max-width: 768px) {
-      .game__player {
-        margin: 10px 0 10px 0px;
-        border-radius: 0;
-        border: none; } }
+      .game__box {
+        margin: 10px 0 10px 0px; } }
+    .game__box--color {
+      background-color: #010101; }
+    .game__box--flex {
+      flex: 1;
+      display: flex; }
+    .game__box:nth-child(1) {
+      margin-right: 16px; }
   .game__player-text {
-    padding: 10px;
     margin-bottom: 0;
     font-size: 22px; }
-    .game__player-text--active {
-      color: #b30000; }
-    @media (max-width: 429px) {
+    .game__player-text:nth-child(1) {
+      padding-bottom: 10px; }
+    .game__player-text--active-1 {
+      color: #57face;
+      padding-left: 10px; }
+    .game__player-text--active-2 {
+      color: #ff0000;
+      padding-left: 10px; }
+    @media (max-width: 454px) {
       .game__player-text {
         font-size: 17px; } }
   .game__btn {
@@ -509,7 +833,9 @@ td {
   .game__body {
     padding: 10px;
     display: flex;
-    padding: 0; }
+    padding: 0;
+    width: 100%;
+    height: 100%; }
     .game__body--background {
       background-color: rgba(7, 74, 89, 0.7);
       border-radius: 0.25rem; }
@@ -521,10 +847,17 @@ td {
     .game__card--color {
       background-color: rgba(35, 140, 140, 0.2);
       backdrop-filter: blur(7px); }
-    .game__card--active-player1 {
-      background-color: #238c8c; }
-    .game__card--active-player2 {
+    .game__card--active-color-1 {
+      background-color: #238b8b; }
+    .game__card--active-color-2 {
       background-color: #b30000; }
+    .game__card--active-text {
+      display: inline-block;
+      vertical-align: top;
+      position: absolute;
+      right: 24px;
+      font-size: large;
+      color: #ffffff; }
   .game__icon {
     width: 150px;
     display: inline-block;
@@ -536,35 +869,33 @@ td {
     padding: 10px;
     margin-bottom: 0;
     font-size: 22px; }
-    @media (max-width: 429px) {
+    @media (max-width: 454px) {
       .game__info {
         font-size: 17px; } }
   .game__sidebar {
     flex: 1;
-    margin-left: 20px;
-    border-radius: 0.25rem;
-    background-color: rgba(7, 74, 89, 0.7); }
-  .game__status-content {
-    padding: 10px;
+    margin-left: 16px;
+    border-radius: 0.25rem; }
+    .game__sidebar--color {
+      background-color: rgba(7, 74, 89, 0.7); }
+  .game__flex-container {
     display: flex; }
-  .game__selected-pl-wrapper {
-    flex: 1;
-    display: flex;
-    padding: 20px;
-    border: solid 1px #ffffff;
-    border-radius: 0.25rem;
-    background-color: #010101; }
-    .game__selected-pl-wrapper:nth-child(1) {
-      margin-right: 20px; }
-  .game__selected-pl-text {
-    flex: 2; }
   .game__token-wrapper {
     border-radius: 50%;
+    border: solid 1px #ffffff;
     text-align: center; }
     .game__token-wrapper--toggle-1 {
-      display: none; }
+      display: block;
+      position: absolute;
+      top: 54%;
+      left: 37%;
+      z-index: 5; }
     .game__token-wrapper--toggle-2 {
-      display: none; }
+      display: block;
+      position: absolute;
+      top: 54%;
+      left: 37%;
+      z-index: 5; }
     .game__token-wrapper--lg {
       width: 120px;
       height: 120px;
@@ -578,16 +909,20 @@ td {
       .game__token-wrapper--sm:nth-child(2) {
         margin-left: 5px; }
     .game__token-wrapper--color-1 {
-      background-color: #238c8c; }
+      background-color: #238b8b; }
     .game__token-wrapper--color-2 {
       background-color: #b30000; }
   .game__token--lg {
     width: 70px; }
   .game__token--sm {
     width: 30px; }
+  .game__total-score--aquaMarine {
+    color: #57face; }
+  .game__total-score--red {
+    color: #ff0000; }
   .game__dice-wrapper {
     height: 100vh;
-    padding: 20px; }
+    padding: 16px; }
   .game__dice-container {
     position: fixed;
     margin: 0 auto 150px; }
@@ -595,23 +930,18 @@ td {
     width: 75px;
     height: 75px;
     border-radius: 5px;
-    margin: 80px auto 0;
+    margin: 20px auto 0;
     cursor: pointer;
     position: relative;
-    left: 50%; }
-  .game__dice-title {
-    margin: 0 0 20px; }
-  .game__status {
-    display: block;
-    padding: 10px; }
+    left: 45%; }
   .game__tiles-container {
     flex: 4;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(5, 170px);
+    grid-gap: 16px;
     grid-auto-flow: row; }
   .game__tile {
-    height: 150px;
+    height: 170px;
     background-color: rgba(7, 74, 89, 0.7);
     border-radius: 0.25rem;
     padding: 10px; }
@@ -628,57 +958,87 @@ td {
   .game__number {
     display: block; }
   .game__modal {
-    background-color: rgba(7, 74, 89, 0.5);
-    backdrop-filter: blur(7px);
     border: solid 1px #ffffff;
     border-radius: 0.25rem;
     padding: 40px;
     position: fixed;
     bottom: 60%;
-    right: 25%;
+    right: 40%;
     text-align: center; }
+    .game__modal--color {
+      background-color: rgba(7, 74, 89, 0.5);
+      backdrop-filter: blur(7px); }
     .game__modal--penalty {
       display: none; }
     .game__modal--winner {
       display: none; }
   .game__icon-close {
     color: #ffffff; }
-  .game__title {
-    text-align: center;
-    margin: 20px; }
   .game__chair {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative; }
     .game__chair--hidden {
       display: none; }
   .game__fireflies {
-    background-size: cover;
-    background-image: url(http://i.imgur.com/aa7Rw.png);
-    width: 21px;
-    top: -20px;
-    height: 21px;
-    position: absolute;
-    animation: leftright 24s infinite cubic-bezier(0.39, 0, 0.63, 1), updown 8s infinite 1.25s cubic-bezier(0.39, 0, 0.63, 1); }
-    .game__fireflies:nth-of-type(2) {
-      animation-delay: 4s;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #d35400;
+    box-shadow: 0 0 15px #d35400;
+    z-index: 1;
+    position: absolute; }
+    .game__fireflies:nth-of-type(even) {
       animation-duration: 17s, 8s;
       animation-fill-mode: backwards, backwards; }
+    .game__fireflies:nth-of-type(odd) {
+      animation-duration: 12s, 15s;
+      animation-fill-mode: backwards, backwards; }
+    .game__fireflies--after:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #ffa502;
+      transition: 0.5s;
+      transform: scale(0.9);
+      z-index: -1;
+      transform: scale(1.2);
+      box-shadow: 0 0 15px #ffa502;
+      filter: blur(1px); }
 
-.selected-player {
-  display: inline-block;
-  vertical-align: top;
-  position: absolute;
-  right: 24px;
-  font-size: large;
-  color: #ffffff; }
-
-.selected-player-one,
-.selected-player-two {
-  padding-left: 10px;
-  font-weight: normal; }
-
+@keyframes leftright {
+  100% {
+    left: 20%; }
+  16.666% {
+    left: 90%; }
+  33.333% {
+    left: 10%; }
+  50% {
+    left: 50%; }
+  66.666% {
+    left: 70%; }
+  83.333% {
+    left: 40%; } }
+@keyframes updown {
+  100% {
+    top: 20%; }
+  25% {
+    top: 70%; }
+  50% {
+    top: 50%; }
+  75% {
+    top: 70%; } }
 @media (max-width: 768px) {
   .ml-auto {
     margin: 20px auto; } }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
 
 .finale-page {
   height: 100vh;
@@ -692,14 +1052,26 @@ td {
     background-color: rgba(7, 74, 89, 0.7);
     border-radius: 0.25rem; }
   .finale-page__title {
-    font-family: "Game of Thrones", serif;
+    font-family: "Game of Thrones", serif, regular;
     margin-bottom: 30px; }
 
 .footer {
-  clear: both;
   position: relative;
-  height: 200px;
-  margin-top: -200px;
+  flex-shrink: 0;
   background-color: #010101; }
+
+.icons {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  line-height: 20vh; }
+  .icons__link {
+    color: #ffffff;
+    margin-right: 5%; }
+    .icons__link:nth-of-type(4) {
+      margin-right: 0; }
+    .icons__link--hover:hover {
+      color: #57face; }
 
 /*# sourceMappingURL=styles.css.map */

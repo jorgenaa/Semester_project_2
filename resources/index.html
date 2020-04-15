@@ -17,7 +17,7 @@
 		<nav class="menu navbar navbar-expand-lg responsive">
 
 			<a href="index.html" class="navbar-brand">
-				<img class="navbar__logo pr-3" src="/resources/graphics/Logo/2x/Logo2@2x.png" />
+				<img class="navbar__logo" src="/resources/graphics/Logo/2x/Logo2@2x.png" />
 				<h1 class="navbar-brand navbar__brand">Game of Thrones Race Game</h1>
 			</a>
 
@@ -51,22 +51,19 @@
 			<div class="container game">
 				<section class="row game__header p-3">
 
-
 					<h2 class="game__page-title">Character Selection</h2>
 					<p class="game__text ">Two player game.
 						Click on one of the cards to select a player.
 						Max one character per player</p>
 
+					<div class="game__box game__box--color col-sm-12 col-md-6">
 
-
-					<div class="game__player col-sm-12 col-md-6  ">
-
-						<p class="game__player-text">Player 1:<span
-								class="selected-player-one game__player-text game__player-text--active"></span>
+						<p class="game__player-text">Player 1:<span id="selected-player-one"
+								class="game__player-text game__player-text--active-1"></span>
 						</p>
 
-						<p class="game__player-text">Player 2:<span
-								class="selected-player-two game__player-text game__player-text--active"></span>
+						<p class="game__player-text">Player 2:<span id="selected-player-two"
+								class="game__player-text game__player-text--active-2"></span>
 						</p>
 					</div>
 
@@ -91,11 +88,23 @@
 
 	</div><!-- container -->
 
-	<div class="push"></div>
 	</main>
 	</div><!-- background-img -->
 	<footer class="footer">
-
+		<div class="icons">
+			<a href="https://twitter.com/explore" class="icons__link icons__link--hover">
+				<i class="fab fa-twitter fa-2x"></i>
+			</a>
+			<a href="https://www.facebook.com/" class="icons__link icons__link--hover">
+				<i class="fab fa-facebook fa-2x"></i>
+			</a>
+			<a href="https://www.youtube.com/" class="icons__link icons__link--hover">
+				<i class="fab fa-youtube fa-2x"></i>
+			</a>
+			<a href="" class="icons__link icons__link--hover">
+				<i class="fas fa-envelope fa-2x"></i>
+			</a>
+		</div>
 	</footer>
 
 	<script src="js/jquery-3.4.1.min.js"></script>

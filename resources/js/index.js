@@ -86,11 +86,11 @@ const gameCharacters = [{
 let container = document.querySelector('.game__body');
 
 for (let i = 0; i < gameCharacters.length; i++) {
-	container.innerHTML += `<div class="col-10 col-md-6 col-lg-4 p-2">
+	container.innerHTML += `<div class="col-12 col-md-6 col-lg-4 p-2">
 							<div class="card game__card game__card--color p-2" data-name="${gameCharacters[i].name}" data-icon="${gameCharacters[i].icon}"> 
 								<div class="game-body white-text">
 									<img class="game__icon" src="${gameCharacters[i].icon}" >
-									<p class="selected-player"></p>
+									<p class="game__card--active-text"></p>
 									<table class="game__table">
 										<tr>
 											<th>Name:</th> 
@@ -134,40 +134,39 @@ function activateCard(event) {
 	if (
 		player1 &&
 		player2 &&
-		!this.classList.contains('game__card--active-player1') &&
-		!this.classList.contains('game__card--active-player2')
+		!this.classList.contains('game__card--active-color-1') &&
+		!this.classList.contains('game__card--active-color-2')
 	) {
 		return;
 	}
 
-	const selectedPlayerOne = document.querySelector('.selected-player-one');
-	const selectedPlayerTwo = document.querySelector('.selected-player-two');
-	const selectedPlayer = this.querySelector('.selected-player');
+	const selectedPlayerOne = document.getElementById('selected-player-one');
+	const selectedPlayerTwo = document.getElementById('selected-player-two');
+	const selectedPlayer = this.querySelector('.game__card--active-text');
 
 
-	if (player1 === null && !this.classList.contains('game__card--active-player2')) {
+	if (player1 === null && !this.classList.contains('game__card--active-color-2')) {
 		player1 = this.dataset.name;
 		player1 = this.dataset.icon;
-		this.classList.add('game__card--active-player1');
-		this.classList.add('selected-player--active');
+		this.classList.add('game__card--active-color-1');
+
 		selectedPlayer.innerHTML = 'This is player 1';
 		selectedPlayerOne.innerHTML = this.dataset.name;
 		localStorage.setItem('Player1', this.dataset.name);
 		localStorage.setItem('Player1Token', JSON.stringify(this.dataset.icon));
 	} else {
-		if (this.classList.contains('game__card--active-player1')) {
+		if (this.classList.contains('game__card--active-color-1')) {
 			player1 = null;
-			this.classList.remove('game__card--active-player1');
-			this.classList.remove('selected-player--active');
+			this.classList.remove('game__card--active-color-1');
+
 			selectedPlayer.innerHTML = '';
 			selectedPlayerOne.innerHTML = '';
 			localStorage.removeItem('Player1');
 			localStorage.removeItem('Player1Token');
 		} else {
-			if (this.classList.contains('game__card--active-player2')) {
+			if (this.classList.contains('game__card--active-color-2')) {
 				player2 = null;
-				this.classList.remove('game__card--active-player2');
-				this.classList.remove('selected-player--active');
+				this.classList.remove('game__card--active-color-2');
 				selectedPlayer.innerHTML = '';
 				selectedPlayerTwo.innerHTML = '';
 				localStorage.removeItem('Player2');
@@ -175,8 +174,8 @@ function activateCard(event) {
 			} else {
 				player2 = this.dataset.name;
 				player2 = this.dataset.icon;
-				this.classList.add('game__card--active-player2');
-				this.classList.add('selected-player--active');
+				this.classList.add('game__card--active-color-2');
+
 				selectedPlayer.innerHTML = 'This is player 2';
 				selectedPlayerTwo.innerHTML = this.dataset.name;
 				localStorage.setItem('Player2', this.dataset.name);
@@ -186,7 +185,6 @@ function activateCard(event) {
 	}
 
 	toggleContinueButton();
-
 	event.stopPropagation();
 }
 

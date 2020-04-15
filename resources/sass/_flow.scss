@@ -1,0 +1,33 @@
+//Random position
+
+@for $i from 1 through 20 {
+	.game__fireflies:nth-child(#{$i}) {
+		top: random(1000) + 1 + px;
+		left: random(600) + 1 + px;
+	}
+
+	@include for-tablet-only {
+		.game__fireflies:nth-child(#{$i}) {
+			top: random(500) + 1 + px;
+			left: random(500) + 1 + px;
+		}
+	}
+
+	@include for-phone-only {
+		.game__fireflies:nth-child(#{$i}) {
+			top: random(200) + 1 + px;
+			left: random(200) + 1 + px;
+		}
+	}
+}
+
+//Random animation behavior
+
+@for $i from 1 through 20 {
+	.game__fireflies:nth-child(#{$i}) {
+		animation: updown 0s ease-in-out random(20) + s infinite,
+			leftright 0s ease-in-out random(20) + s infinite;
+
+
+	}
+}

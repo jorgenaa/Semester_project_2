@@ -48,21 +48,30 @@
 		<main class="wrapper">
 			<div class="container game">
 				<section class="game__header p-3">
-					<h2 class="game__page-title pl-3">Board Game</h2>
-					<div class="game__status-content">
+					<h2 class="game__page-title ">Board Game</h2>
+					<div class="game__flex-container">
 
-						<div class="game__selected-pl-wrapper">
+						<div class="game__box game__box--color game__box--flex">
 							<div class="game__token-wrapper game__token-wrapper--lg game__token-wrapper--color-1">
 								<img id="get-player1-token" class="game__token game__token--lg" src="" alt="Token" />
 							</div>
-							<p class="game__selected-pl-text">Player 1:<span class="get-player-1 pl-2"></span></p>
+							<div class="game__selected-pl-text">
+								<p>Player 1:<span class="get-player-1 pl-2"></span></p>
+								<p class="game__score">Current score:<span id="totalScore1"
+										class="game__total-score--aquaMarine pl-2"></span></p>
+							</div>
+
 						</div>
 
-						<div class="game__selected-pl-wrapper">
+						<div class="game__box game__box--color game__box--flex">
 							<div class="game__token-wrapper game__token-wrapper--lg game__token-wrapper--color-2">
 								<img id="get-player2-token" class="game__token game__token--lg" src="" alt="Token" />
 							</div>
-							<p class="game__selected-pl-text">Player 2:<span class="get-player-2 pl-2"></span></p>
+							<div class="game__selected-pl-text">
+								<p>Player 2:<span class="get-player-2 pl-2"></span></p>
+								<p class="game__score">Current score:<span id="totalScore2"
+										class="game__total-score--red pl-2"></span></p>
+							</div>
 						</div>
 					</div><!-- game__status-content  -->
 
@@ -82,40 +91,39 @@
 					<div class="game__tiles-container">
 
 					</div>
-					<aside class="game__sidebar">
+					<aside class="game__sidebar game__sidebar--color">
 						<div class="game__dice-wrapper">
-							<h3 class="game__dice-title">Click on the dice to roll it</h3>
+							<h4 class="game__text text-center">Click on the dice to roll it</h4>
 							<div class="game__dice-container">
-								<img id="dice" class="game__dice" src="../resources/graphics/icons/dice-6.png"
-									alt="Dice">
+								<img id="dice" class="game__dice" src="graphics/icons/dice-2.png" alt="Dice">
 							</div>
-							<p id="status" class="game__status"></p>
 						</div>
 					</aside><!-- game__sidebar -->
 				</section><!-- game__body -->
 
-				<div id="modal-penalty" class="game__modal game__modal--penalty">
+				<div id="modal-penalty" class="game__modal game__modal--color game__modal--penalty">
 					<button id="close1" type="button" class="close game__btn game__btn--close">
 						<span class="game__icon-close">&times;</span>
 					</button>
 					<p id="modal-status" class="game__status"></p>
-					<button type="button" class="btn game__btn game__btn--color">Click
+					<button type="button" class="btn game__btn game__btn--color game__btn--hover">Click
 						here
 						to continue
 						to the game
 					</button>
 				</div>
 
-				<div id="modal-winner" class="game__modal game__modal--winner">
-					<button id="close2" type="button" class="close game__btn game__btn--close">
+				<div id="modal-winner" class="game__modal game__modal--color game__modal--winner">
+					<button id="close2" type="button" class="close game__btn game__btn--close game__btn--hover">
 						<span>&times;</span>
 					</button>
-					<h3 class="mb-4">Congratulations<span class="p-2" id="token-winner"></span>you have won the game!
+					<h3 class="mb-4">Congratulations<span class="p-2" id="winner"></span>you have won the game!
 					</h3>
-					<a href=" The-Finale_Page.html"><button type="button" class="btn game__btn game__btn--color">Click
+					<a href=" The-Finale_Page.html"><button type="button"
+							class="btn game__btn game__btn--color game__btn--hover">Click
 							here
 							to continue
-							to the winner
+							to the finale
 							page</button></a>
 				</div>
 
@@ -124,11 +132,23 @@
 
 	</div><!-- background-img background-img--gamePage -->
 
-	<div class="push"></div>
 	</main>
 	</div><!-- background-img -->
 	<footer class="footer">
-
+		<div class="icons">
+			<a href="https://twitter.com/explore" class="icons__link icons__link--hover">
+				<i class="fab fa-twitter fa-2x"></i>
+			</a>
+			<a href="https://www.facebook.com/" class="icons__link icons__link--hover">
+				<i class="fab fa-facebook fa-2x"></i>
+			</a>
+			<a href="https://www.youtube.com/" class="icons__link icons__link--hover">
+				<i class="fab fa-youtube fa-2x"></i>
+			</a>
+			<a href="" class="icons__link icons__link--hover">
+				<i class="fas fa-envelope fa-2x"></i>
+			</a>
+		</div>
 	</footer>
 
 	<script src="js/jquery-3.4.1.min.js"></script>

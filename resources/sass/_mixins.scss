@@ -13,18 +13,19 @@
 }
 
 @mixin for-tablet-only {
-	@media (max-width: 643px) {
+	@media (max-width: 668px) {
 		@content;
 	}
 }
 
 @mixin for-phone-only {
-	@media (max-width: 429px) {
+	@media (max-width: 454px) {
 		@content;
 	}
 }
 
 //Backgrounds
+
 @mixin backgroundBlur {
 	background-color: rgba(35, 140, 140, 0.2);
 	backdrop-filter: blur(7px);

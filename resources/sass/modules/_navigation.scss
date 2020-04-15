@@ -1,12 +1,18 @@
 .navbar {
 
-
 	&__logo {
 		height: 64px;
+		padding-right: 16px;
+
+		@include for-phone-only {
+			padding-right: 0;
+		}
 	}
 
 	&__brand {
 		color: $white;
+		font-family: $NanumGothic;
+		margin-right: 0;
 
 		@include for-tablet-only {
 			display: block;
@@ -53,11 +59,11 @@
 
 	&--hover {
 		&:hover {
-			color: #a7f2e4;
+			color: $aquaMarine;
 		}
 	}
 
 	&--active {
-		color: #a7f2e4;
+		color: $aquaMarine;
 	}
 }
