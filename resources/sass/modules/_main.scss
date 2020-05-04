@@ -1,487 +1,576 @@
 .background-img {
-	background-position: inherit;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
-	&--characterPage {
-		background-image: url("../img/castle.jpg");
-	}
+    &--characterPage {
+        background-image: url('../img/castle.jpg');
+    }
 
-	&--gamePage {
-		background-image: url("../img/map.jpg");
-	}
+    &--gamePage {
+        background-image: url('../img/map.jpg');
+    }
 
-	&--finalePage {
-		background-image: url("../img/trees.jpg");
-	}
+    &--finalePage {
+        background-image: url('../img/trees.jpg');
+    }
 }
 
 .wrapper {
-	min-height: 100%;
-	margin-bottom: -50px;
+    min-height: 100%;
+    margin-bottom: -50px;
 }
 
-.game {
-	position: relative;
-	top: 20px;
-	padding-bottom: 150px;
-	flex: 1 0 auto;
-
-	&__header {
-		margin-bottom: 20px;
-		@include backgroundOpacity;
-		border-radius: 0.25rem;
-	}
-
-	&__page-title {
-		font-family: $GameOfThrones;
-		padding: 0 0 24px;
-		margin-bottom: 0;
-
-		@include for-tablet-only {
-			font-size: 26px;
-			text-align: center;
-		}
-
-		@include for-phone-only {
-			line-height: 1.5;
-		}
-	}
-
-	&__title {
-		font-family: $NanumGothic;
-		padding: 8px;
-		margin: 0;
-		text-align: center;
-
-		@include for-phone-only {
-			font-size: 22px;
-		}
-	}
-
-	&__text {
-		margin-bottom: 16px;
-
-		@include for-tablet-only {
-			text-align: center;
-		}
-	}
-
-	&__box {
-		padding: 20px;
-		border: solid 1px $white;
-		border-radius: 0.25rem;
-
-		@include media-max-768px {
-			margin: 10px 0 10px 0px;
-		}
-
-		&--color {
-			background-color: $black;
-		}
-
-		&--flex {
-			flex: 1;
-			display: flex;
-		}
-
-		&:nth-child(1) {
-			margin-right: 16px;
-		}
-	}
-
-	&__player-text {
-		margin-bottom: 0;
-		font-size: 22px;
-
-		&:nth-child(1) {
-			padding-bottom: 10px;
-		}
-
-		&--active-1 {
-			color: $aquaMarine;
-			padding-left: 10px;
-		}
-
-		&--active-2 {
-			color: $lightRed;
-			padding-left: 10px;
-		}
-
-		@include for-phone-only {
-			font-size: 17px;
-		}
-	}
-
-	&__btn {
-		text-transform: uppercase;
-
-		&--continue {
-			display: none;
-		}
-
-		&--close {
-			color: $white;
-		}
-
-		&--color {
-			background-color: $red;
-			color: $white;
-			border: solid 1px $white;
-		}
-
-		&--hover {
-			&:hover {
-				background-color: $white;
-				color: $red;
-			}
-		}
-	}
-
-	&__body {
-		padding: 10px;
-		display: flex;
-		padding: 0;
-		width: 100%;
-		height: 100%;
-
-		&--background {
-			@include backgroundOpacity;
-			border-radius: 0.25rem;
-		}
-
-		&--column {
-			flex-direction: column;
-		}
-	}
-
-	&__card {
-		cursor: pointer;
-		border: solid 1px $white;
-
-		&--color {
-			@include backgroundBlur;
-		}
-
-		&--active-color-1 {
-			background-color: $lightTeal;
-		}
-
-		&--active-color-2 {
-			background-color: $red;
-		}
-
-		&--active-text {
-			display: inline-block;
-			vertical-align: top;
-			position: absolute;
-			right: 24px;
-			font-size: large;
-			color: $white;
-		}
-	}
-
-	&__icon {
-		width: 150px;
-		display: inline-block;
-		color: white;
-	}
-
-	&__table {
-		height: 220px;
-		color: $white;
-	}
-
-	//////////////////////////////
-	//       Board Game Page
-	//////////////////////////////
-
-	&__info {
-		padding: 10px;
-		margin-bottom: 0;
-		font-size: 22px;
-
-		@include for-phone-only {
-			font-size: 17px;
-		}
-	}
-
-	&__sidebar {
-		flex: 1;
-		margin-left: 16px;
-		border-radius: 0.25rem;
-
-		&--color {
-			@include backgroundOpacity;
-		}
-	}
-
-	&__flex-container {
-		display: flex;
-	}
-
-	&__token-wrapper {
-		border-radius: 50%;
-		border: solid 1px $white;
-		text-align: center;
-
-		&--toggle-1 {
-			display: block;
-			position: absolute;
-			top: 54%;
-			left: 37%;
-			z-index: 5;
-		}
-
-		&--toggle-2 {
-			display: block;
-			position: absolute;
-			top: 54%;
-			left: 37%;
-			z-index: 5;
-		}
-
-		&--lg {
-			width: 120px;
-			height: 120px;
-			line-height: 120px;
-			margin: 0px 20px;
-		}
-
-		&--sm {
-			width: 50px;
-			height: 50px;
-			line-height: 50px;
-
-			float: right;
-
-			&:nth-child(2) {
-				margin-left: 5px;
-			}
-		}
-
-		&--color-1 {
-			background-color: $lightTeal;
-		}
-
-		&--color-2 {
-			background-color: $red;
-		}
-	}
-
-	&__token {
-		&--lg {
-			width: 70px;
-		}
-
-		&--sm {
-			width: 30px;
-		}
-	}
-
-	&__total-score {
-		&--aquaMarine {
-			color: $aquaMarine;
-		}
-
-		&--red {
-			color: $lightRed;
-		}
-	}
-
-	&__dice-wrapper {
-		height: 100vh;
-		padding: 16px;
-	}
-
-	&__dice-container {
-		position: fixed;
-		margin: 0 auto 150px;
-	}
-
-	&__dice {
-		width: 75px;
-		height: 75px;
-		border-radius: 5px;
-		margin: 20px auto 0;
-		cursor: pointer;
-		position: relative;
-		left: 45%;
-	}
-
-	&__tiles-container {
-		flex: 4;
-		display: grid;
-		grid-template-columns: repeat(5, 170px);
-		grid-gap: 16px;
-		grid-auto-flow: row;
-	}
-
-	&__tile {
-		height: 170px;
-		@include backgroundOpacity;
-		border-radius: 0.25rem;
-		padding: 10px;
-
-		&:nth-of-type(5) {
-			background-color: $black;
-		}
-
-		&:nth-of-type(8) {
-			background-color: $black;
-		}
-
-		&:nth-of-type(17) {
-			background-color: $black;
-		}
-
-		&:nth-of-type(22) {
-			background-color: $black;
-		}
-
-		&:nth-of-type(26) {
-			background-color: $black;
-		}
-	}
-
-	&__number {
-		display: block;
-	}
-
-	&__modal {
-		border: solid 1px $white;
-		border-radius: 0.25rem;
-		padding: 40px;
-		position: fixed;
-		bottom: 60%;
-		right: 40%;
-		text-align: center;
-
-		&--color {
-			@include backgroundBlur2;
-		}
-
-		&--penalty {
-			display: none;
-		}
-
-		&--winner {
-			display: none;
-		}
-	}
-
-	&__icon-close {
-		color: $white;
-	}
-
-	///////////////////////////////////
-	// 			The final Page
-	///////////////////////////////////
-
-	&__chair {
-		width: 100%;
-		margin-bottom: 20px;
-		position: relative;
-
-		&--hidden {
-			display: none;
-		}
-	}
-
-	&__fireflies {
-		width: 3px;
-		height: 3px;
-		border-radius: 50%;
-		background-color: #d35400;
-		box-shadow: 0 0 15px #d35400;
-		z-index: 1;
-		position: absolute;
-
-		&:nth-of-type(even) {
-			animation-duration: 17s, 8s;
-			animation-fill-mode: backwards, backwards;
-		}
-
-		&:nth-of-type(odd) {
-			animation-duration: 12s, 15s;
-			animation-fill-mode: backwards, backwards;
-		}
-
-		&--after {
-			&:after {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 5px;
-				height: 5px;
-				border-radius: 50%;
-				background: #ffa502;
-				transition: 0.5s;
-				transform: scale(0.9);
-				z-index: -1;
-				transform: scale(1.2);
-				box-shadow: 0 0 15px #ffa502;
-				filter: blur(1px);
-			}
-		}
-	}
+.main {
+    position: relative;
+    top: 20px;
+    padding-bottom: 150px;
+    flex: 1 0 auto;
 }
 
-@keyframes leftright {
+.main-hd {
+    margin-bottom: 20px;
+    @include backgroundOpacity;
+    border-radius: 0.25rem;
+
+    &__title {
+        font-family: $GameOfThrones;
+        padding: 0 0 24px;
+        margin-bottom: 0;
+
+        @include for-tablet-only {
+            font-size: 26px;
+            text-align: center;
+        }
+
+        @include for-phone-only {
+            line-height: 1.5;
+        }
+    }
+
+    &__text {
+        margin-bottom: 16px;
+
+        @include for-tablet-only {
+            text-align: center;
+        }
+    }
+
+    &__sub-title {
+        font-family: $NanumGothic;
+        padding: 8px;
+        margin: 0;
+        text-align: center;
+
+        @include for-phone-only {
+            font-size: 22px;
+        }
+    }
+}
+
+
+.status {
+    padding: 20px;
+    border: solid 1px $white;
+    border-radius: 0.25rem;
+
+    @include media-max-768px {
+        margin: 10px 0 10px 0px;
+    }
+
+    &--color {
+        background-color: $black;
+    }
+
+    &--flex {
+        flex: 1;
+        display: flex;
+    }
+
+    &:nth-child(1) {
+        margin-right: 16px;
+    }
+
+    &__selected-player {
+        margin-bottom: 0;
+        font-size: 22px;
+
+        &:nth-child(1) {
+            padding-bottom: 10px;
+        }
+
+        &--active-1 {
+            color: $aquaMarine;
+            padding-left: 10px;
+        }
+
+        &--active-2 {
+            color: $lightRed;
+            padding-left: 10px;
+        }
+
+        @include for-phone-only {
+            font-size: 17px;
+        }
+    }
+
+    &__total-score {
+        &--aquaMarine {
+            color: $aquaMarine;
+        }
+
+        &--red {
+            color: $lightRed;
+        }
+    }
+
+    &__token {
+        border-radius: 50%;
+        border: solid 1px $white;
+        text-align: center;
+
+        &--toggle-1 {
+            display: block;
+            position: absolute;
+            top: 54%;
+            left: 37%;
+            z-index: 5;
+        }
+
+        &--toggle-2 {
+            display: block;
+            position: absolute;
+            top: 54%;
+            left: 37%;
+            z-index: 5;
+        }
+
+        &--lg {
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            margin: 0px 20px;
+        }
+
+        &--sm {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+
+            float: right;
+
+            &:nth-child(2) {
+                margin-left: 5px;
+            }
+        }
+
+        &--green {
+            background-color: $elmGreen;
+        }
+
+        &--red {
+            background-color: $red;
+        }
+
+        &--animate {
+            animation: rotatingY 5s linear infinite;
+            border: none;
+        }
+       
+        &--shadow-1 {
+            box-shadow: 0px 0px 0px 6px $aquaMarine; 
+            background-color: rgba($color: $elmGreen, $alpha: .8);
+        }
+        &--shadow-2 {
+            box-shadow: 1px 1px 1px 6px $lightRed; 
+            background-color: rgba($color: $red, $alpha: .8);
+        }
+    }
+
+    &__token-icon {
+
+        &--lg {
+            width: 70px;
+        }
+
+        &--sm {
+            width: 30px;
+        }
+    }
+
+}
+
+
+.btn {
+    text-transform: uppercase;
+
+    &--continue {
+        display: none;
+    }
+
+    &--close {
+        color: $white;
+    }
+
+    &--red {
+        background-color: $red;
+        color: $white;
+        border: solid 1px $white;
+    }
+
+    &--hover {
+        &:hover {
+            background-color: $white;
+            color: $red;
+        }
+    }
+}
+
+.main-section {
+    padding: 10px;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    &--background {
+        @include backgroundOpacity;
+        border-radius: 0.25rem;
+    }
+
+    &--column {
+        flex-direction: column;
+    }
+}
+
+.cards {
+    &__card {
+        cursor: pointer;
+        border: solid 1px $white;
+
+        &--color {
+            @include backgroundBlur;
+        }
+
+        &--active-color-1 {
+            background-color: $elmGreen;
+        }
+
+        &--active-color-2 {
+            background-color: $red;
+        }
+
+        &--active-text {
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+            right: 24px;
+            font-size: large;
+            color: $white;
+        }
+    }
+
+    &__icon {
+        width: 150px;
+        display: inline-block;
+        color: white;
+    }
+
+    &__table {
+        height: 220px;
+        color: $white;
+
+    }
+}
+
+//////////////////////////////
+//       Board Game Page
+//////////////////////////////
+
+
+.sidebar {
+    flex: 1;
+    margin-left: 16px;
+    border-radius: 0.25rem;
+
+
+    &--background-color {
+        @include backgroundOpacity;
+    }
+
+    &__dice-wrapper {
+        height: 100vh;
+        padding: 16px;
+    }
+
+    &__dice-container {
+        position: fixed;
+        margin: 0 auto;
+    }
+
+    &__dice {
+        width: 75px;
+        height: 75px;
+        border-radius: 5px;
+        margin: 20px auto;
+        cursor: pointer;
+        position: relative;
+        left: 50%;
+    }
+
+}
+
+.flex-container {
+    display: flex;
+}
+
+.tiles {
+    flex: 4;
+    display: grid;
+    grid-template-columns: repeat(5, 170px);
+    grid-gap: 16px;
+    grid-auto-flow: row;
+
+    &__tile {
+        height: 170px;
+        @include backgroundOpacity;
+        border-radius: 0.25rem;
+        padding: 10px;
+
+        &:nth-of-type(5) {
+            background-color: $black;
+        }
+
+        &:nth-of-type(8) {
+            background-color: $black;
+        }
+
+        &:nth-of-type(17) {
+            background-color: $black;
+        }
+
+        &:nth-of-type(22) {
+            background-color: $black;
+        }
+
+        &:nth-of-type(26) {
+            background-color: $black;
+        }
+    }
+
+    &__number {
+        display: block;
+    }
+}
+
+
+
+.modal {
+    max-width: 600px;
+    height: 250px;
+    border: solid 1px $white;
+    border-radius: 0.25rem;
+    padding: 40px;
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    text-align: center;
+
+    &--color {
+        @include backgroundBlur2;
+    }
+
+    &--penalty {
+        display: none;
+    }
+
+    &--winner {
+        display: none;
+    }
+
+    &__btn {
+        margin-top: 20px;
+        text-transform: uppercase;
+
+        &--close {
+            color: $white;
+        }
+
+        &--red {
+            background-color: $red;
+            color: $white;
+            border: solid 1px $white;
+        }
+
+        &--hover {
+            &:hover {
+                background-color: $white;
+                color: $red;
+            }
+        }
+
+        &--close {
+            position: absolute;
+            top: 0;
+            right: 20px;
+        }
+    }
+
+    &__icon-close {
+        color: $white;
+
+        &--hover {
+            &:hover {
+                color: $aquaMarine;
+            }
+        }
+    }
+}
+
+
+
+///////////////////////////////////
+// 			The final Page
+///////////////////////////////////
+
+.chair {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+
+    &--hidden {
+        display: none;
+    }
+}
+
+.fireflies {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #d35400;
+    box-shadow: 0 0 15px #d35400;
+    z-index: 1;
+    position: absolute;
+    
+    @include media-max-991px {
+        display: none;
+    }
+    &:nth-of-type(even) {
+      animation-duration: 12s, 15s;
+      animation-fill-mode: backwards;
+      animation-direction: alternate;
+      
+    }
+    &:nth-of-type(odd) {
+        animation-fill-mode: forwards;
+        animation-duration: 10s, 17s;
+    }
+
+    &--after {
+        &::before {
+            background: black;
+            opacity: 0.4;
+           
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #ffa502;
+            transition: 0.5s;
+            transform: scale(0.9);
+            z-index: -1;
+            transform: scale(1.2);
+            box-shadow: 0 0 15px #ffa502;
+            filter: blur(3px);
+           
+        }
+    }
+}
+
+@keyframes rotatingY {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes moveFireflies {
+   
+    15% {
+        left: 90%;
+       
+        }
+    25% {
+        top: 70%;
+             }
+    30%{
+        left: 20%;
+    }
+    
+    50% {
+        left: 50%;
+        top: 50%;
+        
+    }
+    65% {
+        left: 70%;
+          
+        }
+    75% {
+        top: 70%;
+    }
+    85% {
+        left: 40%;
+    }
+    100% {
+         left: 20%;
+         top: 20%;
+    }
+}
+
+@keyframes flash {
+	0%{
+		opacity: 0;
+        box-shadow: 0 0 0vw 0vw #ffa502;
+    }
+	30%{
+		opacity: 0;
+		box-shadow: 0 0 0vw 0vw #ffa502;
+	}
 	100% {
-		left: 20%;
+		opacity: 0;
+		box-shadow: 0 0 0vw 0vw #ffa502;
 	}
-
-	16.666% {
-		left: 90%;
-	}
-
-	33.333% {
-		left: 10%;
-	}
-
-	50% {
-		left: 50%;
-	}
-
-	66.666% {
-		left: 70%;
-	}
-
-	83.333% {
-		left: 40%;
+	5%{
+		opacity: 1;
+		box-shadow: 0 0 2vw 0.4vw #ffa502;
 	}
 }
-
-@keyframes updown {
-	100% {
-		top: 20%;
-	}
-
-	25% {
-		top: 70%;
-	}
-
-	50% {
-		top: 50%;
-	}
-
-	75% {
-		top: 70%;
-	}
-}
+  
 
 //Configurated bootsrap class
 
 .ml-auto {
-	@include media-max-768px {
-		margin: 20px auto;
-	}
+    @include media-max-768px {
+        margin: 20px auto;
+    }
 }
 
 .row {
-	margin-left: 0;
-	margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.close {
+    opacity: 1;
 }

@@ -5,16 +5,10 @@
 	document.getElementById('get-winner-token-1').src = tokenWinner1;
 	document.getElementById('get-winner-token-2').src = tokenWinner2;
 	document.getElementById('playerWinner').innerHTML = playerWinner;
-	var tokenWinnerToggle1 = document.querySelector('.game__token-wrapper--toggle-1');
-	var tokenWinnerToggle2 = document.querySelector('.game__token-wrapper--toggle-2');
+	var tokenWinnerToggle1 = document.querySelector('.status__token--toggle-1');
+	var tokenWinnerToggle2 = document.querySelector('.status__token--toggle-2');
 
-	localStorage.removeItem('TokenWinner1');
-	localStorage.removeItem('TokenWinner2');
-	localStorage.removeItem('PlayerWinner');
-	localStorage.removeItem('Player1');
-	localStorage.removeItem('Player2');
-	localStorage.removeItem('Player1Token');
-	localStorage.removeItem('Player2Token');
+	localStorage.clear();
 
 	if (tokenWinner1) {
 		tokenWinnerToggle2.style.display = 'none';
@@ -24,9 +18,23 @@
 
 })();
 
-let animationContainer = document.getElementById('animation-container');
-for (var i = 0; i < 19; i++) {
-	animationContainer.innerHTML += `
-	<div class="game__fireflies game__fireflies--after"></div>`;
 
+//Create fireflies
+const animationContainer = document.getElementById('animation-container');
+
+for (var i = 0; i < 15; i++) {
+	animationContainer.innerHTML += `
+	<div class="fireflies fireflies--after"></div>`;
 }
+
+//Positioning fireflies randomly
+const fireflies = document.querySelectorAll('.fireflies');
+const width = animationContainer.offsetWidth;
+const height = animationContainer.offsetHeight;
+
+fireflies.forEach(function(firefly){
+	firefly.style.top = Math.round(Math.random(300) * height) +  'px';
+	firefly.style.left = Math.round(Math.random(500) * width) + 'px';
+	
+ });
+

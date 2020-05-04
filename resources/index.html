@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Game of Thrones - Character Select Page</title>
-	<script src="https://kit.fontawesome.com/593b24e566.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/593b24e566.js" crossorigin="anonymous"></script> 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/styles.css">
@@ -17,7 +17,7 @@
 		<nav class="menu navbar navbar-expand-lg responsive">
 
 			<a href="index.html" class="navbar-brand">
-				<img class="navbar__logo" src="/resources/graphics/Logo/2x/Logo2@2x.png" />
+				<img class="navbar__logo" src="/graphics/Logo/2x/Logo2@2x.png" />
 				<h1 class="navbar-brand navbar__brand">Game of Thrones Race Game</h1>
 			</a>
 
@@ -32,63 +32,55 @@
 				<div class="navbar-nav ml-auto">
 					<a class="nav-item nav-item--color nav-item--hover nav-link nav-item--active"
 						href="index.html">Character Selection</a>
-					<a class="nav-item  nav-item--color nav-item--hover nav-link" href="Board-Game_Page.html">Board
+					<a class="nav-item  nav-item--color nav-item--hover nav-link" href="game.html">Board
 						Game</a>
-					<a class="nav-item  nav-item--color nav-item--hover nav-link" href="The-Finale_Page.html">Final
+					<a class="nav-item  nav-item--color nav-item--hover nav-link" href="finale.html">Final
 						Page</a>
 				</div><!--  navbar-nav-->
 			</div><!-- collapse -->
 
 		</nav>
 	</header>
-	<!-- <div class="container game-board">
-				<div class="game-board__header">
-					<h2 class="game-board__title">Board Game</h2> -->
+	
 
-	<div class="background-img background-img--characterPage">
-		<main class="wrapper">
+	<div class="background-img background-img--characterPage ">
+		<main class="container main">
 
-			<div class="container game">
-				<section class="row game__header p-3">
+				<section class="row main-hd p-3">  
 
-					<h2 class="game__page-title">Character Selection</h2>
-					<p class="game__text ">Two player game.
+					<h2 class="main-hd__title">Character Selection</h2>
+					<p class="main-hd__text ">Two player game.
 						Click on one of the cards to select a player.
 						Max one character per player</p>
 
-					<div class="game__box game__box--color col-sm-12 col-md-6">
+					<div class="status status--color col-sm-12 col-md-6">
 
-						<p class="game__player-text">Player 1:<span id="selected-player-one"
-								class="game__player-text game__player-text--active-1"></span>
+						<p class="status__selected-player">Player 1:<span id="selected-player-one"
+								class="status__selected-player status__selected-player--active-1"></span>
 						</p>
 
-						<p class="game__player-text">Player 2:<span id="selected-player-two"
-								class="game__player-text game__player-text--active-2"></span>
+						<p class="status__selected-player">Player 2:<span id="selected-player-two"
+								class="status__selected-player status__selected-player--active-2"></span>
 						</p>
 					</div>
 
 					<div class="ml-auto">
-						<a href="Board-Game_Page.html">
+						<a href="game.html">
 							<button id="continue" type="button"
-								class="btn game__btn--color game__btn--hover game__btn--continue mr-2 " disabled>
+								class="btn btn--red btn--hover btn--continue mr-2 " disabled> 
 								Click here to continue
 								<i class=""></i>
 							</button>
 						</a>
 					</div><!-- ml-auto -->
-				</section><!-- game__header -->
+				</section><!-- main-hd --> 
 
-				<section class="row p-2 game__body game__body--background justify-content-center">
-
-
-				</section><!-- row game__body -->
-
-			</div><!-- row game cards--background -->
+				<section class="row p-2 main-section main-section--background justify-content-center"> 
 
 
-	</div><!-- container -->
+				</section><!-- row main-section -->
 
-	</main>
+	</main><!-- container -->
 	</div><!-- background-img -->
 	<footer class="footer">
 		<div class="icons">

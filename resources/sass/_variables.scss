@@ -4,25 +4,25 @@ $red: #b30000;
 $lightRed: #ff0000;
 $black: #010101;
 $darkTeal: #074a59;
-$lightTeal: #238b8b;
+$elmGreen: #1D7373;
 $aquaMarine: #57face;
 $white: #ffffff;
 
 //Font variables
 
 @font-face {
-	font-family: 'Game of Thrones';
-	src: url("../fonts/Game_of_thrones/Game\ of\ Thrones.ttf");
+    font-family: 'Game of Thrones';
+    src: url("/fonts/Game_of_thrones/Game\ of\ Thrones.ttf");
 }
 
 @font-face {
-	font-family: 'Nanum Gothic';
-	src: url("../fonts/Nanum_Gothic/NanumGothic-Bold.ttf");
+    font-family: 'Nanum Gothic';
+    src: url("../fonts/Nanum_Gothic/NanumGothic-Bold.ttf");
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url("../fonts/Roboto/Roboto-Regular.ttf");
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 //Font variables

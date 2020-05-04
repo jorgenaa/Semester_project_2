@@ -1,311 +1,82 @@
 @font-face {
-  font-family: 'Game of Thrones';
-  src: url("../fonts/Game_of_thrones/Game of Thrones.ttf"); }
+  font-family: "Game of Thrones";
+  src: url("/fonts/Game_of_thrones/Game of Thrones.ttf");
+}
 @font-face {
-  font-family: 'Nanum Gothic';
-  src: url("../fonts/Nanum_Gothic/NanumGothic-Bold.ttf"); }
+  font-family: "Nanum Gothic";
+  src: url("../fonts/Nanum_Gothic/NanumGothic-Bold.ttf");
+}
 @font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto/Roboto-Regular.ttf"); }
-.game__fireflies:nth-child(1) {
-  top: 229px;
-  left: 98px; }
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+.fireflies:nth-child(1) {
+  animation: moveFireflies 21s ease-in-out 4s infinite, flash 38s ease 4s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(1) {
-    top: 401px;
-    left: 24px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(1) {
-    top: 173px;
-    left: 105px; } }
-.game__fireflies:nth-child(2) {
-  top: 577px;
-  left: 33px; }
+.fireflies:nth-child(2) {
+  animation: moveFireflies 34s ease-in-out 4s infinite, flash 22s ease 4s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(2) {
-    top: 381px;
-    left: 74px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(2) {
-    top: 114px;
-    left: 123px; } }
-.game__fireflies:nth-child(3) {
-  top: 811px;
-  left: 199px; }
+.fireflies:nth-child(3) {
+  animation: moveFireflies 51s ease-in-out 9s infinite, flash 13s ease 9s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(3) {
-    top: 281px;
-    left: 104px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(3) {
-    top: 107px;
-    left: 87px; } }
-.game__fireflies:nth-child(4) {
-  top: 810px;
-  left: 523px; }
+.fireflies:nth-child(4) {
+  animation: moveFireflies 29s ease-in-out 14s infinite, flash 11s ease 9s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(4) {
-    top: 257px;
-    left: 198px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(4) {
-    top: 32px;
-    left: 104px; } }
-.game__fireflies:nth-child(5) {
-  top: 731px;
-  left: 124px; }
+.fireflies:nth-child(5) {
+  animation: moveFireflies 56s ease-in-out 8s infinite, flash 16s ease 3s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(5) {
-    top: 51px;
-    left: 281px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(5) {
-    top: 117px;
-    left: 8px; } }
-.game__fireflies:nth-child(6) {
-  top: 789px;
-  left: 362px; }
+.fireflies:nth-child(6) {
+  animation: moveFireflies 39s ease-in-out 10s infinite, flash 53s ease 10s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(6) {
-    top: 78px;
-    left: 26px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(6) {
-    top: 5px;
-    left: 162px; } }
-.game__fireflies:nth-child(7) {
-  top: 429px;
-  left: 513px; }
+.fireflies:nth-child(7) {
+  animation: moveFireflies 28s ease-in-out 5s infinite, flash 43s ease 11s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(7) {
-    top: 270px;
-    left: 409px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(7) {
-    top: 46px;
-    left: 181px; } }
-.game__fireflies:nth-child(8) {
-  top: 970px;
-  left: 219px; }
+.fireflies:nth-child(8) {
+  animation: moveFireflies 26s ease-in-out 12s infinite, flash 26s ease 14s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(8) {
-    top: 34px;
-    left: 197px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(8) {
-    top: 175px;
-    left: 6px; } }
-.game__fireflies:nth-child(9) {
-  top: 732px;
-  left: 453px; }
+.fireflies:nth-child(9) {
+  animation: moveFireflies 18s ease-in-out 7s infinite, flash 20s ease 9s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(9) {
-    top: 449px;
-    left: 398px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(9) {
-    top: 18px;
-    left: 193px; } }
-.game__fireflies:nth-child(10) {
-  top: 346px;
-  left: 434px; }
+.fireflies:nth-child(10) {
+  animation: moveFireflies 39s ease-in-out 12s infinite, flash 30s ease 14s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(10) {
-    top: 9px;
-    left: 289px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(10) {
-    top: 60px;
-    left: 58px; } }
-.game__fireflies:nth-child(11) {
-  top: 999px;
-  left: 171px; }
+.fireflies:nth-child(11) {
+  animation: moveFireflies 16s ease-in-out 8s infinite, flash 27s ease 11s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(11) {
-    top: 152px;
-    left: 480px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(11) {
-    top: 33px;
-    left: 59px; } }
-.game__fireflies:nth-child(12) {
-  top: 275px;
-  left: 392px; }
+.fireflies:nth-child(12) {
+  animation: moveFireflies 55s ease-in-out 11s infinite, flash 46s ease 13s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(12) {
-    top: 89px;
-    left: 366px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(12) {
-    top: 56px;
-    left: 80px; } }
-.game__fireflies:nth-child(13) {
-  top: 303px;
-  left: 403px; }
+.fireflies:nth-child(13) {
+  animation: moveFireflies 10s ease-in-out 10s infinite, flash 11s ease 1s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(13) {
-    top: 339px;
-    left: 86px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(13) {
-    top: 41px;
-    left: 134px; } }
-.game__fireflies:nth-child(14) {
-  top: 416px;
-  left: 319px; }
+.fireflies:nth-child(14) {
+  animation: moveFireflies 24s ease-in-out 7s infinite, flash 20s ease 8s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(14) {
-    top: 468px;
-    left: 72px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(14) {
-    top: 9px;
-    left: 188px; } }
-.game__fireflies:nth-child(15) {
-  top: 543px;
-  left: 493px; }
+.fireflies:nth-child(15) {
+  animation: moveFireflies 5s ease-in-out 10s infinite, flash 51s ease 13s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(15) {
-    top: 318px;
-    left: 446px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(15) {
-    top: 129px;
-    left: 178px; } }
-.game__fireflies:nth-child(16) {
-  top: 23px;
-  left: 481px; }
+.fireflies:nth-child(16) {
+  animation: moveFireflies 29s ease-in-out 5s infinite, flash 59s ease 13s infinite;
+}
 
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(16) {
-    top: 122px;
-    left: 216px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(16) {
-    top: 56px;
-    left: 32px; } }
-.game__fireflies:nth-child(17) {
-  top: 338px;
-  left: 437px; }
-
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(17) {
-    top: 386px;
-    left: 428px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(17) {
-    top: 148px;
-    left: 16px; } }
-.game__fireflies:nth-child(18) {
-  top: 911px;
-  left: 297px; }
-
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(18) {
-    top: 307px;
-    left: 350px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(18) {
-    top: 91px;
-    left: 93px; } }
-.game__fireflies:nth-child(19) {
-  top: 822px;
-  left: 2px; }
-
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(19) {
-    top: 174px;
-    left: 81px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(19) {
-    top: 152px;
-    left: 43px; } }
-.game__fireflies:nth-child(20) {
-  top: 34px;
-  left: 258px; }
-
-@media (max-width: 668px) {
-  .game__fireflies:nth-child(20) {
-    top: 154px;
-    left: 245px; } }
-@media (max-width: 454px) {
-  .game__fireflies:nth-child(20) {
-    top: 112px;
-    left: 11px; } }
-.game__fireflies:nth-child(1) {
-  animation: updown 0s ease-in-out 1s infinite, leftright 0s ease-in-out 13s infinite; }
-
-.game__fireflies:nth-child(2) {
-  animation: updown 0s ease-in-out 20s infinite, leftright 0s ease-in-out 20s infinite; }
-
-.game__fireflies:nth-child(3) {
-  animation: updown 0s ease-in-out 12s infinite, leftright 0s ease-in-out 13s infinite; }
-
-.game__fireflies:nth-child(4) {
-  animation: updown 0s ease-in-out 18s infinite, leftright 0s ease-in-out 17s infinite; }
-
-.game__fireflies:nth-child(5) {
-  animation: updown 0s ease-in-out 9s infinite, leftright 0s ease-in-out 15s infinite; }
-
-.game__fireflies:nth-child(6) {
-  animation: updown 0s ease-in-out 14s infinite, leftright 0s ease-in-out 18s infinite; }
-
-.game__fireflies:nth-child(7) {
-  animation: updown 0s ease-in-out 9s infinite, leftright 0s ease-in-out 16s infinite; }
-
-.game__fireflies:nth-child(8) {
-  animation: updown 0s ease-in-out 5s infinite, leftright 0s ease-in-out 1s infinite; }
-
-.game__fireflies:nth-child(9) {
-  animation: updown 0s ease-in-out 6s infinite, leftright 0s ease-in-out 11s infinite; }
-
-.game__fireflies:nth-child(10) {
-  animation: updown 0s ease-in-out 12s infinite, leftright 0s ease-in-out 2s infinite; }
-
-.game__fireflies:nth-child(11) {
-  animation: updown 0s ease-in-out 18s infinite, leftright 0s ease-in-out 6s infinite; }
-
-.game__fireflies:nth-child(12) {
-  animation: updown 0s ease-in-out 19s infinite, leftright 0s ease-in-out 10s infinite; }
-
-.game__fireflies:nth-child(13) {
-  animation: updown 0s ease-in-out 17s infinite, leftright 0s ease-in-out 1s infinite; }
-
-.game__fireflies:nth-child(14) {
-  animation: updown 0s ease-in-out 4s infinite, leftright 0s ease-in-out 4s infinite; }
-
-.game__fireflies:nth-child(15) {
-  animation: updown 0s ease-in-out 20s infinite, leftright 0s ease-in-out 2s infinite; }
-
-.game__fireflies:nth-child(16) {
-  animation: updown 0s ease-in-out 6s infinite, leftright 0s ease-in-out 14s infinite; }
-
-.game__fireflies:nth-child(17) {
-  animation: updown 0s ease-in-out 16s infinite, leftright 0s ease-in-out 2s infinite; }
-
-.game__fireflies:nth-child(18) {
-  animation: updown 0s ease-in-out 9s infinite, leftright 0s ease-in-out 17s infinite; }
-
-.game__fireflies:nth-child(19) {
-  animation: updown 0s ease-in-out 10s infinite, leftright 0s ease-in-out 7s infinite; }
-
-.game__fireflies:nth-child(20) {
-  animation: updown 0s ease-in-out 2s infinite, leftright 0s ease-in-out 13s infinite; }
+.fireflies:nth-child(17) {
+  animation: moveFireflies 39s ease-in-out 2s infinite, flash 35s ease 15s infinite;
+}
 
 /* ==========================================================================
    Normalize.scss settings
@@ -332,7 +103,8 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
   height: 100%;
-  margin: 0; }
+  margin: 0;
+}
 
 /**
  * Remove default margin.
@@ -345,13 +117,17 @@ body {
   font-family: "Roboto", sans-serif, regular;
   letter-spacing: 1px;
   font-weight: 0.5px;
-  font-style: normal; }
-  @media (max-width: 454px) {
-    body {
-      font-size: 15px; } }
+  font-style: normal;
+}
+@media (max-width: 454px) {
+  body {
+    font-size: 15px;
+  }
+}
 
 header {
-  padding: 0; }
+  padding: 0;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -374,7 +150,8 @@ menu,
 nav,
 section,
 summary {
-  display: block; }
+  display: block;
+}
 
 /**
  * 1. Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
@@ -387,7 +164,8 @@ video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Prevents modern browsers from displaying `audio` without controls.
@@ -395,7 +173,8 @@ video {
  */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
@@ -403,7 +182,8 @@ audio:not([controls]) {
  */
 [hidden],
 template {
-  display: none; }
+  display: none;
+}
 
 /* Links
    ========================================================================== */
@@ -411,14 +191,16 @@ template {
  * Remove the gray background color from active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 /**
  * Improve readability of focused elements when they are also in an
  * active/hover state.
  */
 a:active, a:hover {
-  outline: 0; }
+  outline: 0;
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -426,20 +208,23 @@ a:active, a:hover {
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
 b,
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /**
  * Address styling not present in Safari and Chrome.
  */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
@@ -447,20 +232,23 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /**
  * Addresses styling not present in IE 8/9.
  */
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -470,13 +258,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -485,13 +276,15 @@ sub {
  * 2. Improves image quality when scaled in IE 7.
  */
 img {
-  border: 0; }
+  border: 0;
+}
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* Grouping content
    ========================================================================== */
@@ -499,20 +292,23 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
 /**
  * Address differences between Firefox and other browsers.
  */
 hr {
   box-sizing: content-box;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Contain overflow in all browsers.
  */
 pre {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
@@ -523,7 +319,8 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 /* Forms
    ========================================================================== */
@@ -548,13 +345,15 @@ textarea {
   font: inherit;
   /* 2 */
   margin: 0;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 button {
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -564,7 +363,8 @@ button {
  */
 button,
 select {
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -576,20 +376,22 @@ select {
  *  Known issue: inner spacing remains in IE 6.
  */
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type=button],
+input[type=reset],
+input[type=submit] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Re-set default cursor for disabled elements.
  */
 button[disabled],
 html input[disabled] {
-  cursor: default; }
+  cursor: default;
+}
 
 /**
  * Remove inner padding and border in Firefox 4+.
@@ -597,54 +399,60 @@ html input[disabled] {
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
 /**
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  *  Known issue: excess padding remains in IE 6.
  */
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
-input[type="search"] {
+input[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   box-sizing: content-box;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
 /**
  * Define consistent border, margin, and padding.
@@ -652,7 +460,8 @@ input[type="search"]::-webkit-search-decoration {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
@@ -664,20 +473,23 @@ legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 optgroup {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* Tables
    ========================================================================== */
@@ -686,392 +498,575 @@ optgroup {
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 tr {
-  border: none; }
+  border: none;
+}
 
 th {
-  width: 20%; }
+  width: 20%;
+}
 
 th,
 td {
-  padding: 5px; }
+  padding: 5px;
+}
 
 .header--background {
-  background-color: #010101; }
+  background-color: #010101;
+}
 
 .navbar__logo {
   height: 64px;
-  padding-right: 16px; }
-  @media (max-width: 454px) {
-    .navbar__logo {
-      padding-right: 0; } }
+  padding-right: 16px;
+}
+@media (max-width: 454px) {
+  .navbar__logo {
+    padding-right: 0;
+  }
+}
 .navbar__brand {
   color: #ffffff;
   font-family: "Nanum Gothic", sans-serif, bold;
-  margin-right: 0; }
-  @media (max-width: 668px) {
-    .navbar__brand {
-      display: block; } }
-  @media (max-width: 454px) {
-    .navbar__brand {
-      display: none; } }
+  margin-right: 0;
+}
+@media (max-width: 668px) {
+  .navbar__brand {
+    display: block;
+  }
+}
+@media (max-width: 454px) {
+  .navbar__brand {
+    display: none;
+  }
+}
 @media (max-width: 991px) {
   .navbar__collapse {
     border: 1px #57face;
-    border-top-style: solid; } }
+    border-top-style: solid;
+  }
+}
 
 .hamburger__element {
   width: 35px;
   height: 3px;
   background-color: #ffffff;
-  margin: 7px 0; }
+  margin: 7px 0;
+}
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: none;
-  box-shadow: none; }
+  box-shadow: none;
+}
 
 .nav-item--color {
-  color: white; }
+  color: white;
+}
 .nav-item--hover:hover {
-  color: #57face; }
+  color: #57face;
+}
 .nav-item--active {
-  color: #57face; }
+  color: #57face;
+}
 
 .background-img {
   background-position: inherit;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
-  .background-img--characterPage {
-    background-image: url("../img/castle.jpg"); }
-  .background-img--gamePage {
-    background-image: url("../img/map.jpg"); }
-  .background-img--finalePage {
-    background-image: url("../img/trees.jpg"); }
+  background-attachment: fixed;
+}
+.background-img--characterPage {
+  background-image: url("../img/castle.jpg");
+}
+.background-img--gamePage {
+  background-image: url("../img/map.jpg");
+}
+.background-img--finalePage {
+  background-image: url("../img/trees.jpg");
+}
 
 .wrapper {
   min-height: 100%;
-  margin-bottom: -50px; }
+  margin-bottom: -50px;
+}
 
-.game {
+.main {
   position: relative;
   top: 20px;
   padding-bottom: 150px;
-  flex: 1 0 auto; }
-  .game__header {
-    margin-bottom: 20px;
-    background-color: rgba(7, 74, 89, 0.7);
-    border-radius: 0.25rem; }
-  .game__page-title {
-    font-family: "Game of Thrones", serif, regular;
-    padding: 0 0 24px;
-    margin-bottom: 0; }
-    @media (max-width: 668px) {
-      .game__page-title {
-        font-size: 26px;
-        text-align: center; } }
-    @media (max-width: 454px) {
-      .game__page-title {
-        line-height: 1.5; } }
-  .game__title {
-    font-family: "Nanum Gothic", sans-serif, bold;
-    padding: 8px;
-    margin: 0;
-    text-align: center; }
-    @media (max-width: 454px) {
-      .game__title {
-        font-size: 22px; } }
-  .game__text {
-    margin-bottom: 16px; }
-    @media (max-width: 668px) {
-      .game__text {
-        text-align: center; } }
-  .game__box {
-    padding: 20px;
-    border: solid 1px #ffffff;
-    border-radius: 0.25rem; }
-    @media (max-width: 768px) {
-      .game__box {
-        margin: 10px 0 10px 0px; } }
-    .game__box--color {
-      background-color: #010101; }
-    .game__box--flex {
-      flex: 1;
-      display: flex; }
-    .game__box:nth-child(1) {
-      margin-right: 16px; }
-  .game__player-text {
-    margin-bottom: 0;
-    font-size: 22px; }
-    .game__player-text:nth-child(1) {
-      padding-bottom: 10px; }
-    .game__player-text--active-1 {
-      color: #57face;
-      padding-left: 10px; }
-    .game__player-text--active-2 {
-      color: #ff0000;
-      padding-left: 10px; }
-    @media (max-width: 454px) {
-      .game__player-text {
-        font-size: 17px; } }
-  .game__btn {
-    text-transform: uppercase; }
-    .game__btn--continue {
-      display: none; }
-    .game__btn--close {
-      color: #ffffff; }
-    .game__btn--color {
-      background-color: #b30000;
-      color: #ffffff;
-      border: solid 1px #ffffff; }
-    .game__btn--hover:hover {
-      background-color: #ffffff;
-      color: #b30000; }
-  .game__body {
-    padding: 10px;
-    display: flex;
-    padding: 0;
-    width: 100%;
-    height: 100%; }
-    .game__body--background {
-      background-color: rgba(7, 74, 89, 0.7);
-      border-radius: 0.25rem; }
-    .game__body--column {
-      flex-direction: column; }
-  .game__card {
-    cursor: pointer;
-    border: solid 1px #ffffff; }
-    .game__card--color {
-      background-color: rgba(35, 140, 140, 0.2);
-      backdrop-filter: blur(7px); }
-    .game__card--active-color-1 {
-      background-color: #238b8b; }
-    .game__card--active-color-2 {
-      background-color: #b30000; }
-    .game__card--active-text {
-      display: inline-block;
-      vertical-align: top;
-      position: absolute;
-      right: 24px;
-      font-size: large;
-      color: #ffffff; }
-  .game__icon {
-    width: 150px;
-    display: inline-block;
-    color: white; }
-  .game__table {
-    height: 220px;
-    color: #ffffff; }
-  .game__info {
-    padding: 10px;
-    margin-bottom: 0;
-    font-size: 22px; }
-    @media (max-width: 454px) {
-      .game__info {
-        font-size: 17px; } }
-  .game__sidebar {
-    flex: 1;
-    margin-left: 16px;
-    border-radius: 0.25rem; }
-    .game__sidebar--color {
-      background-color: rgba(7, 74, 89, 0.7); }
-  .game__flex-container {
-    display: flex; }
-  .game__token-wrapper {
-    border-radius: 50%;
-    border: solid 1px #ffffff;
-    text-align: center; }
-    .game__token-wrapper--toggle-1 {
-      display: block;
-      position: absolute;
-      top: 54%;
-      left: 37%;
-      z-index: 5; }
-    .game__token-wrapper--toggle-2 {
-      display: block;
-      position: absolute;
-      top: 54%;
-      left: 37%;
-      z-index: 5; }
-    .game__token-wrapper--lg {
-      width: 120px;
-      height: 120px;
-      line-height: 120px;
-      margin: 0px 20px; }
-    .game__token-wrapper--sm {
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      float: right; }
-      .game__token-wrapper--sm:nth-child(2) {
-        margin-left: 5px; }
-    .game__token-wrapper--color-1 {
-      background-color: #238b8b; }
-    .game__token-wrapper--color-2 {
-      background-color: #b30000; }
-  .game__token--lg {
-    width: 70px; }
-  .game__token--sm {
-    width: 30px; }
-  .game__total-score--aquaMarine {
-    color: #57face; }
-  .game__total-score--red {
-    color: #ff0000; }
-  .game__dice-wrapper {
-    height: 100vh;
-    padding: 16px; }
-  .game__dice-container {
-    position: fixed;
-    margin: 0 auto 150px; }
-  .game__dice {
-    width: 75px;
-    height: 75px;
-    border-radius: 5px;
-    margin: 20px auto 0;
-    cursor: pointer;
-    position: relative;
-    left: 45%; }
-  .game__tiles-container {
-    flex: 4;
-    display: grid;
-    grid-template-columns: repeat(5, 170px);
-    grid-gap: 16px;
-    grid-auto-flow: row; }
-  .game__tile {
-    height: 170px;
-    background-color: rgba(7, 74, 89, 0.7);
-    border-radius: 0.25rem;
-    padding: 10px; }
-    .game__tile:nth-of-type(5) {
-      background-color: #010101; }
-    .game__tile:nth-of-type(8) {
-      background-color: #010101; }
-    .game__tile:nth-of-type(17) {
-      background-color: #010101; }
-    .game__tile:nth-of-type(22) {
-      background-color: #010101; }
-    .game__tile:nth-of-type(26) {
-      background-color: #010101; }
-  .game__number {
-    display: block; }
-  .game__modal {
-    border: solid 1px #ffffff;
-    border-radius: 0.25rem;
-    padding: 40px;
-    position: fixed;
-    bottom: 60%;
-    right: 40%;
-    text-align: center; }
-    .game__modal--color {
-      background-color: rgba(7, 74, 89, 0.5);
-      backdrop-filter: blur(7px); }
-    .game__modal--penalty {
-      display: none; }
-    .game__modal--winner {
-      display: none; }
-  .game__icon-close {
-    color: #ffffff; }
-  .game__chair {
-    width: 100%;
-    margin-bottom: 20px;
-    position: relative; }
-    .game__chair--hidden {
-      display: none; }
-  .game__fireflies {
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background-color: #d35400;
-    box-shadow: 0 0 15px #d35400;
-    z-index: 1;
-    position: absolute; }
-    .game__fireflies:nth-of-type(even) {
-      animation-duration: 17s, 8s;
-      animation-fill-mode: backwards, backwards; }
-    .game__fireflies:nth-of-type(odd) {
-      animation-duration: 12s, 15s;
-      animation-fill-mode: backwards, backwards; }
-    .game__fireflies--after:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: #ffa502;
-      transition: 0.5s;
-      transform: scale(0.9);
-      z-index: -1;
-      transform: scale(1.2);
-      box-shadow: 0 0 15px #ffa502;
-      filter: blur(1px); }
+  flex: 1 0 auto;
+}
 
-@keyframes leftright {
-  100% {
-    left: 20%; }
-  16.666% {
-    left: 90%; }
-  33.333% {
-    left: 10%; }
-  50% {
-    left: 50%; }
-  66.666% {
-    left: 70%; }
-  83.333% {
-    left: 40%; } }
-@keyframes updown {
-  100% {
-    top: 20%; }
+.main-hd {
+  margin-bottom: 20px;
+  background-color: rgba(7, 74, 89, 0.7);
+  border-radius: 0.25rem;
+}
+.main-hd__title {
+  font-family: "Game of Thrones", serif, regular;
+  padding: 0 0 24px;
+  margin-bottom: 0;
+}
+@media (max-width: 668px) {
+  .main-hd__title {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+@media (max-width: 454px) {
+  .main-hd__title {
+    line-height: 1.5;
+  }
+}
+.main-hd__text {
+  margin-bottom: 16px;
+}
+@media (max-width: 668px) {
+  .main-hd__text {
+    text-align: center;
+  }
+}
+.main-hd__sub-title {
+  font-family: "Nanum Gothic", sans-serif, bold;
+  padding: 8px;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 454px) {
+  .main-hd__sub-title {
+    font-size: 22px;
+  }
+}
+
+.status {
+  padding: 20px;
+  border: solid 1px #ffffff;
+  border-radius: 0.25rem;
+}
+@media (max-width: 768px) {
+  .status {
+    margin: 10px 0 10px 0px;
+  }
+}
+.status--color {
+  background-color: #010101;
+}
+.status--flex {
+  flex: 1;
+  display: flex;
+}
+.status:nth-child(1) {
+  margin-right: 16px;
+}
+.status__selected-player {
+  margin-bottom: 0;
+  font-size: 22px;
+}
+.status__selected-player:nth-child(1) {
+  padding-bottom: 10px;
+}
+.status__selected-player--active-1 {
+  color: #57face;
+  padding-left: 10px;
+}
+.status__selected-player--active-2 {
+  color: #ff0000;
+  padding-left: 10px;
+}
+@media (max-width: 454px) {
+  .status__selected-player {
+    font-size: 17px;
+  }
+}
+.status__total-score--aquaMarine {
+  color: #57face;
+}
+.status__total-score--red {
+  color: #ff0000;
+}
+.status__token {
+  border-radius: 50%;
+  border: solid 1px #ffffff;
+  text-align: center;
+}
+.status__token--toggle-1 {
+  display: block;
+  position: absolute;
+  top: 54%;
+  left: 37%;
+  z-index: 5;
+}
+.status__token--toggle-2 {
+  display: block;
+  position: absolute;
+  top: 54%;
+  left: 37%;
+  z-index: 5;
+}
+.status__token--lg {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  margin: 0px 20px;
+}
+.status__token--sm {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  float: right;
+}
+.status__token--sm:nth-child(2) {
+  margin-left: 5px;
+}
+.status__token--green {
+  background-color: #1D7373;
+}
+.status__token--red {
+  background-color: #b30000;
+}
+.status__token--animate {
+  animation: rotatingY 5s linear infinite;
+  border: none;
+}
+.status__token--shadow-1 {
+  box-shadow: 0px 0px 0px 6px #57face;
+  background-color: rgba(29, 115, 115, 0.8);
+}
+.status__token--shadow-2 {
+  box-shadow: 1px 1px 1px 6px #ff0000;
+  background-color: rgba(179, 0, 0, 0.8);
+}
+.status__token-icon--lg {
+  width: 70px;
+}
+.status__token-icon--sm {
+  width: 30px;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+.btn--continue {
+  display: none;
+}
+.btn--close {
+  color: #ffffff;
+}
+.btn--red {
+  background-color: #b30000;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+}
+.btn--hover:hover {
+  background-color: #ffffff;
+  color: #b30000;
+}
+
+.main-section {
+  padding: 10px;
+  display: flex;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.main-section--background {
+  background-color: rgba(7, 74, 89, 0.7);
+  border-radius: 0.25rem;
+}
+.main-section--column {
+  flex-direction: column;
+}
+
+.cards__card {
+  cursor: pointer;
+  border: solid 1px #ffffff;
+}
+.cards__card--color {
+  background-color: rgba(35, 140, 140, 0.2);
+  backdrop-filter: blur(7px);
+}
+.cards__card--active-color-1 {
+  background-color: #1D7373;
+}
+.cards__card--active-color-2 {
+  background-color: #b30000;
+}
+.cards__card--active-text {
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  right: 24px;
+  font-size: large;
+  color: #ffffff;
+}
+.cards__icon {
+  width: 150px;
+  display: inline-block;
+  color: white;
+}
+.cards__table {
+  height: 220px;
+  color: #ffffff;
+}
+
+.sidebar {
+  flex: 1;
+  margin-left: 16px;
+  border-radius: 0.25rem;
+}
+.sidebar--background-color {
+  background-color: rgba(7, 74, 89, 0.7);
+}
+.sidebar__dice-wrapper {
+  height: 100vh;
+  padding: 16px;
+}
+.sidebar__dice-container {
+  position: fixed;
+  margin: 0 auto;
+}
+.sidebar__dice {
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+  margin: 20px auto;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.tiles {
+  flex: 4;
+  display: grid;
+  grid-template-columns: repeat(5, 170px);
+  grid-gap: 16px;
+  grid-auto-flow: row;
+}
+.tiles__tile {
+  height: 170px;
+  background-color: rgba(7, 74, 89, 0.7);
+  border-radius: 0.25rem;
+  padding: 10px;
+}
+.tiles__tile:nth-of-type(5) {
+  background-color: #010101;
+}
+.tiles__tile:nth-of-type(8) {
+  background-color: #010101;
+}
+.tiles__tile:nth-of-type(17) {
+  background-color: #010101;
+}
+.tiles__tile:nth-of-type(22) {
+  background-color: #010101;
+}
+.tiles__tile:nth-of-type(26) {
+  background-color: #010101;
+}
+.tiles__number {
+  display: block;
+}
+
+.modal {
+  max-width: 600px;
+  height: 250px;
+  border: solid 1px #ffffff;
+  border-radius: 0.25rem;
+  padding: 40px;
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  text-align: center;
+}
+.modal--color {
+  background-color: rgba(7, 74, 89, 0.5);
+  backdrop-filter: blur(7px);
+}
+.modal--penalty {
+  display: none;
+}
+.modal--winner {
+  display: none;
+}
+.modal__btn {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.modal__btn--close {
+  color: #ffffff;
+}
+.modal__btn--red {
+  background-color: #b30000;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+}
+.modal__btn--hover:hover {
+  background-color: #ffffff;
+  color: #b30000;
+}
+.modal__btn--close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+.modal__icon-close {
+  color: #ffffff;
+}
+.modal__icon-close--hover:hover {
+  color: #57face;
+}
+
+.chair {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.chair--hidden {
+  display: none;
+}
+
+.fireflies {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #d35400;
+  box-shadow: 0 0 15px #d35400;
+  z-index: 1;
+  position: absolute;
+}
+@media (max-width: 991px) {
+  .fireflies {
+    display: none;
+  }
+}
+.fireflies:nth-of-type(even) {
+  animation-duration: 12s, 15s;
+  animation-fill-mode: backwards;
+  animation-direction: alternate;
+}
+.fireflies:nth-of-type(odd) {
+  animation-fill-mode: forwards;
+  animation-duration: 10s, 17s;
+}
+.fireflies--after::before {
+  background: black;
+  opacity: 0.4;
+}
+.fireflies--after::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffa502;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #ffa502;
+  filter: blur(3px);
+}
+
+@keyframes rotatingY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes moveFireflies {
+  15% {
+    left: 90%;
+  }
   25% {
-    top: 70%; }
+    top: 70%;
+  }
+  30% {
+    left: 20%;
+  }
   50% {
-    top: 50%; }
+    left: 50%;
+    top: 50%;
+  }
+  65% {
+    left: 70%;
+  }
   75% {
-    top: 70%; } }
+    top: 70%;
+  }
+  85% {
+    left: 40%;
+  }
+  100% {
+    left: 20%;
+    top: 20%;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw #ffa502;
+  }
+  30% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw #ffa502;
+  }
+  100% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw #ffa502;
+  }
+  5% {
+    opacity: 1;
+    box-shadow: 0 0 2vw 0.4vw #ffa502;
+  }
+}
 @media (max-width: 768px) {
   .ml-auto {
-    margin: 20px auto; } }
+    margin: 20px auto;
+  }
+}
 
 .row {
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+}
 
-.finale-page {
-  height: 100vh;
-  position: relative;
-  top: 20px;
-  padding-bottom: 50px; }
-  .finale-page__header {
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: rgba(7, 74, 89, 0.7);
-    border-radius: 0.25rem; }
-  .finale-page__title {
-    font-family: "Game of Thrones", serif, regular;
-    margin-bottom: 30px; }
+.close {
+  opacity: 1;
+}
 
 .footer {
   position: relative;
   flex-shrink: 0;
-  background-color: #010101; }
+  background-color: #010101;
+}
 
 .icons {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  line-height: 20vh; }
-  .icons__link {
-    color: #ffffff;
-    margin-right: 5%; }
-    .icons__link:nth-of-type(4) {
-      margin-right: 0; }
-    .icons__link--hover:hover {
-      color: #57face; }
+  line-height: 20vh;
+}
+.icons__link {
+  color: #ffffff;
+  margin-right: 5%;
+}
+.icons__link:nth-of-type(4) {
+  margin-right: 0;
+}
+.icons__link--hover:hover {
+  color: #57face;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,12 +1,13 @@
 //Characters array
 
-const gameCharacters = [{
+const gameCharacters = [
+	{
 		name: 'Eddard Stark',
 		allegiance: 'House Stark',
 		culture: 'Northmen',
 		icon: 'graphics/icons/wolf.png',
 		position: 'Lord of Winterfell',
-		strength: 'Skilled warrior'
+		strength: 'Skilled warrior',
 	},
 	{
 		name: 'Brynden Tully',
@@ -14,7 +15,7 @@ const gameCharacters = [{
 		culture: 'Andal',
 		icon: 'graphics/icons/food-chain.png',
 		position: 'Knight & battle commander',
-		strength: 'Defensive lord'
+		strength: 'Defensive lord',
 	},
 	{
 		name: 'Tywin Lannister',
@@ -22,7 +23,7 @@ const gameCharacters = [{
 		culture: 'Andal',
 		icon: 'graphics/icons/lion.png',
 		position: 'Head of House Lannister',
-		strength: 'Pragmatic & calculated warrior'
+		strength: 'Pragmatic & calculated warrior',
 	},
 	{
 		name: 'Robert Baratheon',
@@ -30,7 +31,7 @@ const gameCharacters = [{
 		culture: 'Andal',
 		icon: 'graphics/icons/stag_head.png',
 		position: 'King of the Andals and the First Men',
-		strength: 'Great warrior'
+		strength: 'Great warrior',
 	},
 	{
 		name: 'Viserys Targaryen',
@@ -38,7 +39,7 @@ const gameCharacters = [{
 		culture: 'Valyrian',
 		icon: 'graphics/icons/hydra.png',
 		position: 'King of the Andals and the First',
-		strength: 'Aggressive and immoral lord'
+		strength: 'Aggressive and immoral lord',
 	},
 	{
 		name: 'Balon Greyjoy',
@@ -46,7 +47,7 @@ const gameCharacters = [{
 		culture: 'Ironborn',
 		icon: 'graphics/icons/giant-squid.png',
 		position: 'King of the Iron Islands',
-		strength: 'Hard, ambitious and ruthless lord'
+		strength: 'Hard, ambitious and ruthless lord',
 	},
 	{
 		name: 'Loras Tyrell',
@@ -54,7 +55,7 @@ const gameCharacters = [{
 		culture: 'Andal',
 		icon: 'graphics/icons/rose.png',
 		position: 'Lord Commander of the Kingsguard',
-		strength: 'Skilled knight'
+		strength: 'Skilled knight',
 	},
 	{
 		name: 'Robin Arryn',
@@ -62,7 +63,7 @@ const gameCharacters = [{
 		culture: 'Andal',
 		icon: 'graphics/icons/falcon-moon.png',
 		position: 'Lord of the Eyrie',
-		strength: 'Defensive lord'
+		strength: 'Defensive lord',
 	},
 	{
 		name: 'Walder Frey',
@@ -70,7 +71,7 @@ const gameCharacters = [{
 		culture: 'Andal',
 		icon: 'graphics/icons/frey.png',
 		position: 'Lord of the Crossing and head of House Frey',
-		strength: 'Vice and brave lord'
+		strength: 'Vice and brave lord',
 	},
 	{
 		name: 'Doran Martell',
@@ -78,23 +79,23 @@ const gameCharacters = [{
 		culture: 'Dornishmen',
 		icon: 'graphics/icons/sun-spear.png',
 		position: 'Prince of Dorne and Lord of Sunspear',
-		strength: 'Strategic abilities'
-	}
+		strength: 'Strategic abilities',
+	},
 ];
 
 // created cards with template literals in a for loop
-let container = document.querySelector('.game__body');
+const container = document.querySelector('.main-section');
 
 for (let i = 0; i < gameCharacters.length; i++) {
-	container.innerHTML += `<div class="col-12 col-md-6 col-lg-4 p-2">
-							<div class="card game__card game__card--color p-2" data-name="${gameCharacters[i].name}" data-icon="${gameCharacters[i].icon}"> 
-								<div class="game-body white-text">
-									<img class="game__icon" src="${gameCharacters[i].icon}" >
-									<p class="game__card--active-text"></p>
-									<table class="game__table">
+	container.innerHTML += `<div class="cards col-12 col-md-6 col-lg-4 p-2">
+							<div class="cards__card cards__card--color p-2" data-name="${gameCharacters[i].name}" data-icon="${gameCharacters[i].icon}"> 
+								<div class="cards__card-body white-text">
+									<img class="cards__icon" src="${gameCharacters[i].icon}" >
+									<p class="cards__card--active-text"></p>
+									<table class="cards__table">
 										<tr>
 											<th>Name:</th> 
-											<td> ${gameCharacters[i].name}</td>
+											<td>${gameCharacters[i].name}</td>
 										</tr>
 										<tr>
 											<th>Allegiance:</th> 
@@ -114,78 +115,75 @@ for (let i = 0; i < gameCharacters.length; i++) {
 										</tr>
 									</table>
 									
-								</div><!-- game-body -->
-							</div><!-- game -->
+								</div><!-- cards-body -->
+							</div><!-- cards__card -->
 						</div><!-- col -->
 				`;
 }
 
-let cards = document.querySelectorAll('.game__card');
+let cards = document.querySelectorAll('.cards__card');
 let player1 = null;
 let player2 = null;
 
 //Toggle & add content to localstorage function
 
-cards.forEach(function(el) {
-	el.addEventListener('click', activateCard, false);
+cards.forEach(function (card) {
+	card.addEventListener('click', activateCard, false);
+	
 });
 
-function activateCard(event) {
+function activateCard() {
 	if (
 		player1 &&
 		player2 &&
-		!this.classList.contains('game__card--active-color-1') &&
-		!this.classList.contains('game__card--active-color-2')
+		!this.classList.contains('cards__card--active-color-1') &&
+		!this.classList.contains('cards__card--active-color-2')
 	) {
 		return;
 	}
+	const selectedPlayerOneText = document.getElementById('selected-player-one');
+	const selectedPlayerTwoText = document.getElementById('selected-player-two');
+	const selectedPlayer = this.querySelector('.cards__card--active-text');
 
-	const selectedPlayerOne = document.getElementById('selected-player-one');
-	const selectedPlayerTwo = document.getElementById('selected-player-two');
-	const selectedPlayer = this.querySelector('.game__card--active-text');
-
-
-	if (player1 === null && !this.classList.contains('game__card--active-color-2')) {
+	if (
+		player1 === null &&
+		!this.classList.contains('cards__card--active-color-2')
+	) {
 		player1 = this.dataset.name;
 		player1 = this.dataset.icon;
-		this.classList.add('game__card--active-color-1');
-
+		this.classList.add('cards__card--active-color-1');
 		selectedPlayer.innerHTML = 'This is player 1';
-		selectedPlayerOne.innerHTML = this.dataset.name;
+		selectedPlayerOneText.innerHTML = this.dataset.name;
 		localStorage.setItem('Player1', this.dataset.name);
 		localStorage.setItem('Player1Token', JSON.stringify(this.dataset.icon));
 	} else {
-		if (this.classList.contains('game__card--active-color-1')) {
+		if (this.classList.contains('cards__card--active-color-1')) {
 			player1 = null;
-			this.classList.remove('game__card--active-color-1');
-
+			this.classList.remove('cards__card--active-color-1');
 			selectedPlayer.innerHTML = '';
-			selectedPlayerOne.innerHTML = '';
+			selectedPlayerOneText.innerHTML = '';
 			localStorage.removeItem('Player1');
 			localStorage.removeItem('Player1Token');
 		} else {
-			if (this.classList.contains('game__card--active-color-2')) {
+			if (this.classList.contains('cards__card--active-color-2')) {
 				player2 = null;
-				this.classList.remove('game__card--active-color-2');
+				this.classList.remove('cards__card--active-color-2');
 				selectedPlayer.innerHTML = '';
-				selectedPlayerTwo.innerHTML = '';
+				selectedPlayerTwoText.innerHTML = '';
 				localStorage.removeItem('Player2');
 				localStorage.removeItem('Player2Token');
 			} else {
 				player2 = this.dataset.name;
 				player2 = this.dataset.icon;
-				this.classList.add('game__card--active-color-2');
-
+				this.classList.add('cards__card--active-color-2');
 				selectedPlayer.innerHTML = 'This is player 2';
-				selectedPlayerTwo.innerHTML = this.dataset.name;
+				selectedPlayerTwoText.innerHTML = this.dataset.name;
 				localStorage.setItem('Player2', this.dataset.name);
 				localStorage.setItem('Player2Token', JSON.stringify(this.dataset.icon));
 			}
 		}
 	}
-
 	toggleContinueButton();
-	event.stopPropagation();
 }
 
 //Continue game function
@@ -196,9 +194,9 @@ continueButton.addEventListener('click', toggleContinueButton);
 function toggleContinueButton() {
 	if (player1 !== null && player2 !== null) {
 		continueButton.disabled = false;
-		continueButton.classList.remove('game__btn--continue');
+		continueButton.classList.remove('btn--continue');
 	} else {
 		continueButton.disabled = true;
-		continueButton.classList.add('game__btn--continue');
+		continueButton.classList.add('btn--continue');
 	}
 }

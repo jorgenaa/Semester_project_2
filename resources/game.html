@@ -17,7 +17,7 @@
 		<nav class="menu navbar navbar-expand-lg responsive">
 
 			<a href="index.html" class="navbar-brand">
-				<img class="navbar__logo pr-3" src="/resources/graphics/Logo/2x/Logo2@2x.png" />
+				<img class="navbar__logo pr-3" src="/graphics/Logo/2x/Logo2@2x.png" />
 				<h1 class="navbar-brand navbar__brand">Game of Thrones Race Game</h1>
 			</a>
 
@@ -33,9 +33,9 @@
 					<a class="nav-item nav-item--color nav-item--hover nav-link " href="index.html">Character
 						Selection</a>
 					<a class="nav-item  nav-item--color nav-item--hover nav-link nav-item--active"
-						href="Board-Game_Page.html">Board
+						href="game.html">Board
 						Game</a>
-					<a class="nav-item  nav-item--color nav-item--hover nav-link" href="The-Finale_Page.html">Final
+					<a class="nav-item  nav-item--color nav-item--hover nav-link" href="finale.html">Final
 						Page</a>
 				</div><!--  navbar-nav-->
 			</div><!-- collapse -->
@@ -45,89 +45,91 @@
 
 	<div class="background-img background-img--gamePage">
 
-		<main class="wrapper">
-			<div class="container game">
-				<section class="game__header p-3">
-					<h2 class="game__page-title ">Board Game</h2>
-					<div class="game__flex-container">
+		<main class="container main">
+			
+				<section class="main-hd p-3"> 
+					<h2 class="main-hd__title">Board Game</h2>
+					<div class="flex-container">
 
-						<div class="game__box game__box--color game__box--flex">
-							<div class="game__token-wrapper game__token-wrapper--lg game__token-wrapper--color-1">
-								<img id="get-player1-token" class="game__token game__token--lg" src="" alt="Token" />
+						<div class="status status--color status--flex">
+							<div class="status__token status__token--lg status__token--green">
+								<img id="get-player1-token" class="status__token-icon status__token-icon--lg" src="" alt="Token" />
 							</div>
-							<div class="game__selected-pl-text">
+							<div class="status__selected-player"> 
 								<p>Player 1:<span class="get-player-1 pl-2"></span></p>
-								<p class="game__score">Current score:<span id="totalScore1"
-										class="game__total-score--aquaMarine pl-2"></span></p>
+								<p class="game__score">Current score:<span id="currentScorePlayer1"
+										class="status__total-score--aquaMarine pl-2"></span></p> 
 							</div>
 
 						</div>
 
-						<div class="game__box game__box--color game__box--flex">
-							<div class="game__token-wrapper game__token-wrapper--lg game__token-wrapper--color-2">
-								<img id="get-player2-token" class="game__token game__token--lg" src="" alt="Token" />
+						<div class="status status--color status--flex">
+							<div class="status__token status__token--lg status__token--red">
+								<img id="get-player2-token" class="status__token-icon status__token-icon--lg" src="" alt="Token" />
 							</div>
-							<div class="game__selected-pl-text">
+							<div class="status__selected-player"> 
 								<p>Player 2:<span class="get-player-2 pl-2"></span></p>
-								<p class="game__score">Current score:<span id="totalScore2"
-										class="game__total-score--red pl-2"></span></p>
+								<p class="status__total-score">Current score:<span id="currentScorePlayer2"
+										class="status__total-score--red pl-2"></span></p> 
 							</div>
 						</div>
-					</div><!-- game__status-content  -->
+					</div><!-- flex-container  -->
 
-				</section><!-- game__header -->
+				</section><!-- main__hd -->
 
 
 				<div id="token1-wrapper"
-					class="game__token-wrapper game__token-wrapper--sm game__token-wrapper--color-1">
-					<img id="token1" class="game__token game__token--sm" src="" alt="">
+					class="status__token status__token--sm status__token--green">
+					<img id="token1" class="status__token-icon status__token-icon--sm" src="" alt="icon">
 				</div>
 				<div id="token2-wrapper"
-					class="game__token-wrapper game__token-wrapper--sm game__token-wrapper--color-2">
-					<img id="token2" class="game__token game__token--sm" src="" alt="">
+					class="status__token status__token--sm status__token--red">
+					<img id="token2" class="status__token-icon status__token-icon--sm" src="" alt="icon">
 				</div>
 
-				<section class="game__body">
-					<div class="game__tiles-container">
+				<section class="main-section">
+				
+					<div class="tiles"> 
 
 					</div>
-					<aside class="game__sidebar game__sidebar--color">
-						<div class="game__dice-wrapper">
-							<h4 class="game__text text-center">Click on the dice to roll it</h4>
-							<div class="game__dice-container">
-								<img id="dice" class="game__dice" src="graphics/icons/dice-2.png" alt="Dice">
+					<aside class="sidebar sidebar--background-color"> 
+						<div class="sidebar__dice-wrapper"> 
+							<h4 class="sidebar__title text-center">Click on the dice to roll it</h4> 
+							<div class="sidebar__dice-container"><!--  -->
+								<img id="dice" class="sidebar__dice" src="graphics/icons/dice-2.png" alt="Dice"> 
 							</div>
 						</div>
-					</aside><!-- game__sidebar -->
-				</section><!-- game__body -->
+						
+					</aside><!-- sidebar -->
+				</section><!-- main-secrion -->
 
-				<div id="modal-penalty" class="game__modal game__modal--color game__modal--penalty">
-					<button id="close1" type="button" class="close game__btn game__btn--close">
-						<span class="game__icon-close">&times;</span>
+				<div id="modal-penalty" class="modal modal--color modal--penalty">
+					<button id="close1" type="button" class="close modal__btn modal__btn--close">
+						<span class="modal__icon-close modal__icon-close--hover">&times;</span>
 					</button>
 					<p id="modal-status" class="game__status"></p>
-					<button type="button" class="btn game__btn game__btn--color game__btn--hover">Click
+					<button type="button" class="btn modal__btn modal__btn--red modal__btn--hover">Click
 						here
 						to continue
 						to the game
-					</button>
+					</button> 
 				</div>
 
-				<div id="modal-winner" class="game__modal game__modal--color game__modal--winner">
-					<button id="close2" type="button" class="close game__btn game__btn--close game__btn--hover">
-						<span>&times;</span>
+				<div id="modal-winner" class="modal modal--color modal--winner">
+					<button id="close2" type="button" class="close modal__btn modal__btn--close modal__btn--hover">
+						<span class="modal__icon-close modal__icon-close--hover">&times;</span>
 					</button>
 					<h3 class="mb-4">Congratulations<span class="p-2" id="winner"></span>you have won the game!
 					</h3>
-					<a href=" The-Finale_Page.html"><button type="button"
-							class="btn game__btn game__btn--color game__btn--hover">Click
+					<a href=" finale.html"><button type="button"
+							class="btn modal__btn modal__btn--red modal__btn--hover">Click
 							here
 							to continue
 							to the finale
 							page</button></a>
 				</div>
 
-			</div><!-- container game -->
+		
 
 
 	</div><!-- background-img background-img--gamePage -->
