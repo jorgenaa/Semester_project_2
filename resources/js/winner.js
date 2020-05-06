@@ -15,13 +15,11 @@
 	} else if (tokenWinner2) {
 		tokenWinnerToggle1.style.display = 'none';
 	}
-
 })();
 
-
-//Create fireflies
 const animationContainer = document.getElementById('animation-container');
 
+// Fireflies created with template literals in a for loop
 for (var i = 0; i < 15; i++) {
 	animationContainer.innerHTML += `
 	<div class="fireflies fireflies--after"></div>`;
@@ -32,9 +30,7 @@ const fireflies = document.querySelectorAll('.fireflies');
 const width = animationContainer.offsetWidth;
 const height = animationContainer.offsetHeight;
 
-fireflies.forEach(function(firefly){
-	firefly.style.top = Math.round(Math.random(300) * height) +  'px';
+fireflies.forEach(function (firefly) {
+	firefly.style.top = Math.round(Math.random(300) * height) + 'px';
 	firefly.style.left = Math.round(Math.random(500) * width) + 'px';
-	
- });
-
+});

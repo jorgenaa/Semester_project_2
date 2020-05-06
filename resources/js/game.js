@@ -1,4 +1,4 @@
-//Fetching the localstorage content
+//Fetching the localstorage content and manipulate the DOM
 
 const localStorageItems = {
 	getPlayer1: localStorage.getItem('Player1'),
@@ -64,6 +64,7 @@ const traps = {
 	},
 };
 
+//Module pattern function 
 let boardGame = (function () {
 	var player1Total = 0,
 		player2Total = 0,
@@ -78,16 +79,17 @@ let boardGame = (function () {
 		modalWinner = document.querySelector('.modal--winner'),
 		modalPenalty = document.querySelector('.modal--penalty');
 
-	// Close modal event
-	document.getElementById('close1').addEventListener('click', function () {
-		modalPenalty.style.display = 'none';
-	});
-
+	// Modal providing information of the traps
 	document
 		.getElementById('modal-penalty')
 		.addEventListener('click', function () {
 			modalPenalty.style.display = 'none';
 		});
+
+	// Close modal event
+	document.getElementById('close1').addEventListener('click', function () {
+		modalPenalty.style.display = 'none';
+	});
 
 	// Close modal & refresh page event
 	document.getElementById('close2').addEventListener('click', function () {
@@ -124,7 +126,7 @@ let boardGame = (function () {
 						player1Total = player1Total + trap.penalty;
 						playerStatus = trap.description;
 						modalPenalty.style.display = 'block';
-						modalStatus.innerHTML = playerStatus; 
+						modalStatus.innerHTML = playerStatus;
 					}
 				} else if (playerTurn === 2) {
 					playerTurn = 1;

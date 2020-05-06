@@ -1,4 +1,4 @@
-//Characters array
+//Characters used for cards, tokens and strings
 
 const gameCharacters = [
 	{
@@ -82,8 +82,9 @@ const gameCharacters = [
 		strength: 'Strategic abilities',
 	},
 ];
+ 
 
-// created cards with template literals in a for loop
+// Cards created with template literals in a for loop
 const container = document.querySelector('.main-section');
 
 for (let i = 0; i < gameCharacters.length; i++) {
@@ -125,7 +126,7 @@ let cards = document.querySelectorAll('.cards__card');
 let player1 = null;
 let player2 = null;
 
-//Toggle & add content to localstorage function
+//Toggle cards function
 
 cards.forEach(function (card) {
 	card.addEventListener('click', activateCard, false);
@@ -186,7 +187,7 @@ function activateCard() {
 	toggleContinueButton();
 }
 
-//Continue game function
+//Continue button function
 
 let continueButton = document.getElementById('continue');
 continueButton.addEventListener('click', toggleContinueButton);
