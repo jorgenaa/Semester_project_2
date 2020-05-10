@@ -22,6 +22,8 @@ const localStorageItems = {
 
 		this.token1Wrapper.style.display = 'none';
 		this.token2Wrapper.style.display = 'none';
+
+		
 	},
 };
 
@@ -65,7 +67,7 @@ const traps = {
 };
 
 //Module pattern function 
-let boardGame = (function () {
+ let boardGame = (function() {
 	var player1Total = 0,
 		player2Total = 0,
 		playerTurn = 1,
@@ -78,7 +80,7 @@ let boardGame = (function () {
 		playerStatus,
 		modalWinner = document.querySelector('.modal--winner'),
 		modalPenalty = document.querySelector('.modal--penalty');
-
+	
 	// Modal providing information of the traps
 	document
 		.getElementById('modal-penalty')
@@ -101,14 +103,14 @@ let boardGame = (function () {
 	});
 
 	return {
-		rollDice() {
+		rollDice(event) {
 			event.preventDefault();
 			var diceResult = Math.floor(Math.random() * 6) + 1;
 			var dice = document.querySelector('.sidebar__dice');
 			dice.style.display = 'block';
 			dice.src = 'graphics/icons/dice-' + diceResult + '.png';
 			dice.innerHTML = diceResult;
-
+			
 			(function tokensInstance() {
 				if (playerTurn === 1) {
 					playerTurn = 2;

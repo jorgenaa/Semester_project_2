@@ -151,6 +151,11 @@
             height: 120px;
             line-height: 120px;
             margin: 0px 20px;
+            @include media-max-768px {
+                width: 80px;
+            height: 80px;
+            line-height: 80px;
+            }
         }
 
         &--sm {
@@ -176,6 +181,9 @@
         &--animate {
             animation: rotatingY 5s linear infinite;
             border: none;
+            @include media-max-768px {
+                animation: none;
+            }
         }
 
         &--shadow-1 {
@@ -193,6 +201,9 @@
 
         &--lg {
             width: 70px;
+            @include media-max-768px {
+                width: 40px;
+            }
         }
 
         &--sm {

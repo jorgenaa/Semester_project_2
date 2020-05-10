@@ -11,71 +11,71 @@
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 .fireflies:nth-child(1) {
-  animation: moveFireflies 21s ease-in-out 4s infinite, flash 38s ease 4s infinite;
+  animation: moveFireflies 18s ease-in-out 11s infinite, flash 22s ease 9s infinite;
 }
 
 .fireflies:nth-child(2) {
-  animation: moveFireflies 34s ease-in-out 4s infinite, flash 22s ease 4s infinite;
+  animation: moveFireflies 24s ease-in-out 14s infinite, flash 14s ease 8s infinite;
 }
 
 .fireflies:nth-child(3) {
-  animation: moveFireflies 51s ease-in-out 9s infinite, flash 13s ease 9s infinite;
+  animation: moveFireflies 17s ease-in-out 13s infinite, flash 9s ease 4s infinite;
 }
 
 .fireflies:nth-child(4) {
-  animation: moveFireflies 29s ease-in-out 14s infinite, flash 11s ease 9s infinite;
+  animation: moveFireflies 49s ease-in-out 11s infinite, flash 40s ease 4s infinite;
 }
 
 .fireflies:nth-child(5) {
-  animation: moveFireflies 56s ease-in-out 8s infinite, flash 16s ease 3s infinite;
+  animation: moveFireflies 1s ease-in-out 8s infinite, flash 39s ease 12s infinite;
 }
 
 .fireflies:nth-child(6) {
-  animation: moveFireflies 39s ease-in-out 10s infinite, flash 53s ease 10s infinite;
+  animation: moveFireflies 21s ease-in-out 10s infinite, flash 16s ease 10s infinite;
 }
 
 .fireflies:nth-child(7) {
-  animation: moveFireflies 28s ease-in-out 5s infinite, flash 43s ease 11s infinite;
+  animation: moveFireflies 42s ease-in-out 1s infinite, flash 42s ease 1s infinite;
 }
 
 .fireflies:nth-child(8) {
-  animation: moveFireflies 26s ease-in-out 12s infinite, flash 26s ease 14s infinite;
+  animation: moveFireflies 56s ease-in-out 13s infinite, flash 4s ease 9s infinite;
 }
 
 .fireflies:nth-child(9) {
-  animation: moveFireflies 18s ease-in-out 7s infinite, flash 20s ease 9s infinite;
+  animation: moveFireflies 17s ease-in-out 5s infinite, flash 49s ease 8s infinite;
 }
 
 .fireflies:nth-child(10) {
-  animation: moveFireflies 39s ease-in-out 12s infinite, flash 30s ease 14s infinite;
+  animation: moveFireflies 38s ease-in-out 9s infinite, flash 39s ease 7s infinite;
 }
 
 .fireflies:nth-child(11) {
-  animation: moveFireflies 16s ease-in-out 8s infinite, flash 27s ease 11s infinite;
+  animation: moveFireflies 43s ease-in-out 10s infinite, flash 41s ease 10s infinite;
 }
 
 .fireflies:nth-child(12) {
-  animation: moveFireflies 55s ease-in-out 11s infinite, flash 46s ease 13s infinite;
+  animation: moveFireflies 53s ease-in-out 10s infinite, flash 51s ease 13s infinite;
 }
 
 .fireflies:nth-child(13) {
-  animation: moveFireflies 10s ease-in-out 10s infinite, flash 11s ease 1s infinite;
+  animation: moveFireflies 33s ease-in-out 7s infinite, flash 42s ease 11s infinite;
 }
 
 .fireflies:nth-child(14) {
-  animation: moveFireflies 24s ease-in-out 7s infinite, flash 20s ease 8s infinite;
+  animation: moveFireflies 43s ease-in-out 9s infinite, flash 47s ease 7s infinite;
 }
 
 .fireflies:nth-child(15) {
-  animation: moveFireflies 5s ease-in-out 10s infinite, flash 51s ease 13s infinite;
+  animation: moveFireflies 29s ease-in-out 8s infinite, flash 25s ease 13s infinite;
 }
 
 .fireflies:nth-child(16) {
-  animation: moveFireflies 29s ease-in-out 5s infinite, flash 59s ease 13s infinite;
+  animation: moveFireflies 13s ease-in-out 10s infinite, flash 4s ease 9s infinite;
 }
 
 .fireflies:nth-child(17) {
-  animation: moveFireflies 39s ease-in-out 2s infinite, flash 35s ease 15s infinite;
+  animation: moveFireflies 16s ease-in-out 13s infinite, flash 10s ease 15s infinite;
 }
 
 /* ==========================================================================
@@ -712,6 +712,13 @@ td {
   line-height: 120px;
   margin: 0px 20px;
 }
+@media (max-width: 768px) {
+  .status__token--lg {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+}
 .status__token--sm {
   width: 50px;
   height: 50px;
@@ -731,6 +738,11 @@ td {
   animation: rotatingY 5s linear infinite;
   border: none;
 }
+@media (max-width: 768px) {
+  .status__token--animate {
+    animation: none;
+  }
+}
 .status__token--shadow-1 {
   box-shadow: 0px 0px 0px 6px #57face;
   background-color: rgba(29, 115, 115, 0.8);
@@ -741,6 +753,11 @@ td {
 }
 .status__token-icon--lg {
   width: 70px;
+}
+@media (max-width: 768px) {
+  .status__token-icon--lg {
+    width: 40px;
+  }
 }
 .status__token-icon--sm {
   width: 30px;
