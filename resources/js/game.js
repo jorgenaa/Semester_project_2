@@ -106,7 +106,7 @@ let boardGame = (function () {
 		rollDice(event) {
 			event.preventDefault();
 			var diceResult = Math.floor(Math.random() * 6) + 1;
-			dice.src = 'graphics/icons/dice-' + diceResult + '.png';
+			dice.src = 'resources/graphics/icons/dice-' + diceResult + '.png';
 			dice.innerHTML = diceResult;
 
 			(function tokensInstance() {
