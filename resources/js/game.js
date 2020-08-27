@@ -22,8 +22,6 @@ const localStorageItems = {
 
 		this.token1Wrapper.style.display = 'none';
 		this.token2Wrapper.style.display = 'none';
-
-		
 	},
 };
 
@@ -66,13 +64,14 @@ const traps = {
 	},
 };
 
-//Module pattern function 
- let boardGame = (function() {
+//Module pattern function
+let boardGame = (function () {
 	var player1Total = 0,
 		player2Total = 0,
 		playerTurn = 1,
 		tile,
 		trap,
+		dice = document.querySelector('.sidebar__dice'),
 		currentScorePlayer1 = document.getElementById('currentScorePlayer1'),
 		currentScorePlayer2 = document.getElementById('currentScorePlayer2'),
 		winner = document.getElementById('winner'),
@@ -80,7 +79,8 @@ const traps = {
 		playerStatus,
 		modalWinner = document.querySelector('.modal--winner'),
 		modalPenalty = document.querySelector('.modal--penalty');
-	
+		dice.style.display = 'block';
+
 	// Modal providing information of the traps
 	document
 		.getElementById('modal-penalty')
@@ -106,15 +106,14 @@ const traps = {
 		rollDice(event) {
 			event.preventDefault();
 			var diceResult = Math.floor(Math.random() * 6) + 1;
-			var dice = document.querySelector('.sidebar__dice');
-			dice.style.display = 'block';
 			dice.src = 'graphics/icons/dice-' + diceResult + '.png';
 			dice.innerHTML = diceResult;
-			
+
 			(function tokensInstance() {
 				if (playerTurn === 1) {
 					playerTurn = 2;
 					player1Total = player1Total + diceResult;
+				
 					if (player1Total > 30) {
 						player1Total = 30;
 					}
@@ -171,6 +170,7 @@ const traps = {
 				}
 			})();
 		},
+		
 	};
 })();
 
